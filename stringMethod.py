@@ -32,7 +32,8 @@ print(c.title())
 
 # 9th -->center()
 print(c)
-print(c.center(25))
+print(c.center(50))
+print(len(c.center(50)))
 
 # 10th -->count():- count the specified word occured in that string
 d="you have to learn python you have no other option"
