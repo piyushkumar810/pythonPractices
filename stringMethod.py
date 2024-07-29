@@ -45,12 +45,12 @@ print(d.find("you"))
 print(d.endswith("option"))
 
 # 13th -->isalphanum()
-e="Hi Piyush You Mob No Is 8102356837"
+e="HiPiyushYouMobNoIs8102356837"
 print(e.isalnum())
 
 # 14th -->isalpha()
 print(e.isalpha())
-f="Hi Piyush"
+f="HiPiyush"
 print(f.isalpha())
 
 # 15th -->islower()/isupper()
