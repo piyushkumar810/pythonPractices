@@ -1,7 +1,7 @@
 # ----------------------------------------foreign time zone
 
 from datetime import datetime
-import pytz
+import pytz # type: ignore
 
 # Define the foreign time zone (e.g., 'America/New_York')
 foreign_timezone = pytz.timezone('America/New_York')
