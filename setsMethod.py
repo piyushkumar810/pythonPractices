@@ -12,3 +12,9 @@ cities3=cities.intersection(cities1)
 print(cities3)
 
 # 3rd --> intersection_update
+cities5=cities.intersection_update(cities1)
+print(cities5)
+
+# 4th --> symmetric_difference
+cities6=cities.symmetric_difference(cities1)
+print(cities6)
