@@ -20,7 +20,7 @@ try:
     print(a[n])
 except:
     print("some error occured")
-print("i am always executed")
+print("i am non-finally block but i will executed")
 # here also we can use functionality of finally keyword without using finally keyword
 
 print("\n")
