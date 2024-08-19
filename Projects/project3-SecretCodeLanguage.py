@@ -33,5 +33,4 @@
 a=input("Enter single string : ")
 print(a)
 
-if (len(a)>=3):
-    a.
+# if (len(a)>=3):
