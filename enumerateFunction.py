@@ -22,3 +22,13 @@ for i, mark1 in enumerate(marks1):
     if(i==3):
         print("piyush, awesome ! ")
 
+print("\n")
+# you can change the starting index 
+# eg
+
+courses=['BBA','BCA','MCA','MBA','BA','MA']
+for idx, course in enumerate(courses, start=1):
+    print(course + " index is " + idx)
+    if(idx == 3):
+        print("selected")
+
