@@ -12,25 +12,20 @@
 #     remove three characters from start and end. now remove the last letter and append the last letter and append it to the beginning
 
 # ----------------------------------------solution
-# message=input("Enter any message you want to send your friend 📩 : ")
-# print(message)
+message=input("Enter any message you want to send your friend 📩 : ")
+print(message)
 
-# listMessage=message.split(" ")
-# print(listMessage)
+listMessage=message.split(" ")
+print(listMessage)
 
-# # print(listMessage[0])
-# # print(listMessage[3])
+# print(listMessage[0])
+# print(listMessage[3])
 
-# # listMessage1=' '.join(listMessage)
-# # print(listMessage1)
+# listMessage1=' '.join(listMessage)
+# print(listMessage1)
 
-# # for n in listMessage:
-# #     print(n)
+# for n in listMessage:
+#     print(n)
 
-# for i in range(len(listMessage)):
-#     print(listMessage[i])
-
-a=input("Enter single string : ")
-print(a)
-
-# if (len(a)>=3):
+for i in range(len(listMessage)):
+    print(listMessage[i])
