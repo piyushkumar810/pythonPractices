@@ -28,7 +28,7 @@ print("\n")
 
 courses=['BBA','BCA','MCA','MBA','BA','MA']
 for idx, course in enumerate(courses, start=1):
-    print(course + " index is " + idx)
+    print(course + " index is " + str(idx))
     if(idx == 3):
         print("selected")
 
