@@ -18,14 +18,14 @@ print(message)
 listMessage=message.split(" ")
 print(listMessage)
 
-# print(listMessage[0])
-# print(listMessage[3])
+print(listMessage[0])
+print(listMessage[3])
 
-# listMessage1=' '.join(listMessage)
-# print(listMessage1)
+listMessage1=' '.join(listMessage)
+print(listMessage1)
 
-# for n in listMessage:
-#     print(n)
+for n in listMessage:
+    print(n)
 
 for i in range(len(listMessage)):
-    print(listMessage[i])
+    print(listMessage[i] + " " +str(i))

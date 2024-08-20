@@ -131,7 +131,7 @@ for i in range(0,len(questions)):
 
     reply=int(input("Enter your answer (1-4) "))
     if(reply==question[5]):
-        print("Correct answwer you have won ", prize_money_list[i])
+        print("Correct answer you have won ", prize_money_list[i])
         if(i==4):
             money=10000
         elif(i==9):
