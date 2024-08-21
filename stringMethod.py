@@ -70,3 +70,8 @@ j="PiYuSh"
 print(h.swapcase())
 print(i.swapcase())
 print(j.swapcase())
+
+# to reverse the string
+st="piyush"
+newst=st[::-1]
+print(newst)
