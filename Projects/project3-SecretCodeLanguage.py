@@ -31,17 +31,19 @@
 # for i in range(len(listMessage)):
 #     print(listMessage[i] + " " +str(i))
 
+import random
+import string
 
 message=input("Enter any message you want to send your friend 📩 : ")
 listMessage=message.split(" ")
 
-coding=True
-if(coding):
+coding=False
+if(coding == True):
     newMessage=[]
     for msg in listMessage:
         if(len(msg)>=3):
-            prefix="jhd"
-            suffix="iud"
+            prefix=''.join(random.choices(string.ascii_letters, k=3))
+            suffix=''.join(random.choices(string.ascii_letters, k=3))
 
             stnew= prefix + msg[1: ] + msg[0] + suffix
             newMessage.append(stnew)
@@ -55,6 +57,8 @@ else:
         if(len(msg)>=3):
 
             stnew= msg[3:-3]
+            # stnew= msg[3:(len(msg)-3)]
+
             stnew=stnew[-1]+stnew[:-1]
             newMessage.append(stnew)
         else:
