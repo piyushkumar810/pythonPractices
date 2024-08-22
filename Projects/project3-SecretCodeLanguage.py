@@ -38,7 +38,7 @@ message=input("Enter any message you want to send your friend 📩 : ")
 listMessage=message.split(" ")
 
 coding=False
-if(coding == True):
+if(coding == False):
     newMessage=[]
     for msg in listMessage:
         if(len(msg)>=3):
@@ -47,6 +47,8 @@ if(coding == True):
 
             stnew= prefix + msg[1: ] + msg[0] + suffix
             newMessage.append(stnew)
+        # elif(len(msg)==1):
+            # random=''.join
         else:
             newMessage.append(msg[::-1])
     print(' '.join(newMessage))
