@@ -1,0 +1,5 @@
+looping is the process where your code is executed repetedly unless the conditions gets unsatisfied.
+there are two types of looping
+
+1) for loop
+2) while loop
