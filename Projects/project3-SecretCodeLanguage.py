@@ -37,8 +37,9 @@ import string
 message=input("Enter any message you want to send your friend 📩 : ")
 listMessage=message.split(" ")
 
-coding=False
-if(coding == False):
+coding=input("1 for coding AND 0 for decoding : ")
+coding=True if(coding=="1") else False
+if(coding):
     newMessage=[]
     for msg in listMessage:
         if(len(msg)>=3):
@@ -47,8 +48,14 @@ if(coding == False):
 
             stnew= prefix + msg[1: ] + msg[0] + suffix
             newMessage.append(stnew)
-        # elif(len(msg)==1):
-            # random=''.join
+        elif(len(msg)==1):
+            if(msg=="a"):
+                newMessage.append("#")
+            else:
+                newMessage.append(":")
+            # ----------below one tried but not correct 
+            # singleString=msg
+            # newMessage.append(''.join(random.choices(string.punctuation, k=1)))
         else:
             newMessage.append(msg[::-1])
     print(' '.join(newMessage))
@@ -60,9 +67,15 @@ else:
 
             stnew= msg[3:-3]
             # stnew= msg[3:(len(msg)-3)]
-
             stnew=stnew[-1]+stnew[:-1]
             newMessage.append(stnew)
+        elif(len(msg)==1):
+            if(msg=="#"):
+                newMessage.append("a")
+            elif(msg==":"):
+                newMessage.append("i")
+            # ----------below one tried but not correct
+            # newMessage.append(singleString)
         else:
             newMessage.append(msg[::-1])
     print(' '.join(newMessage))
