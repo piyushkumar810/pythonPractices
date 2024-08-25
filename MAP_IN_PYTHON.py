@@ -19,6 +19,12 @@ def sq(y):
 print(sq(5))
 
 l1=[3,5,7,3,2,5]
-# newsq=map(sq,l1)
+# newsq=map(sq,l1)--> object return karta
 newsq=list(map(sq,l1))
 print(newsq)
+
+# ---------------------------using lambda in map
+li2=["hi", "my", "name", "piyush", "kumar"]
+final_list=list(map(lambda x:str.upper(x),li2))
+print(li2)
+print(final_list)
