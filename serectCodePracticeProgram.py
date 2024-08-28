@@ -33,32 +33,35 @@ def decord_word(user, key):
     a=' '.join(lst)
     return a
 
+key=None
+
 while True:
     u=input('Enter code or decode or quit : ')
     if(u.lower()=="code"):
-        user1=input('Enter your message you want to send')
+        user1=input('Enter your message you want to send : ')
         try:
-            user2=int(input('enter your key as (3 or 4 or 5) : '))
+            key=int(input('enter your key as (3 or 4 or 5) : '))
         except Exception as e:
             pass
         try:
-            print(code_word(user1,user2))
+            print(code_word(user1,key))
         except Exception as e:
              print('please enter only digit for encryption : ')
+
+             
     elif(u.lower()=="decode"):
-        user1=input('Enetr your message : ')
+        user=input('Enetr your message : ')
         try:
-            key=int(input('enter your key for Decryption : '))
-            if(key>len(user1)):
-                print('your decryption key is greter than message : ')
-            else:
-                print(decord_word(user1,key))
+            print(decord_word(user, key))
+        except ValueError:
+            print('Please enter only a digit for the decryption key.')
         except Exception as e:
-            print('please enter only digit for decryption : ')
+            print(f"An error occurred: {e}")
+
+
     elif(u.lower()=='quit'):
         break
     else:
         print('please enter valid details : ')
-
-
+        
 # ------------------------------hoooo gaya
