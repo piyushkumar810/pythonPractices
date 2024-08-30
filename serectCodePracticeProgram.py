@@ -42,7 +42,7 @@ while True:
         try:
             key=int(input('enter your key as (3 or 4 or 5) : '))
         except Exception as e:
-            pass
+            print(e)
         try:
             print(code_word(user1,key))
         except Exception as e:
