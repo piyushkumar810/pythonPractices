@@ -5,6 +5,7 @@ class employees:
         self.name=name
         self.salary=salary
 
+# using additional constructor
     @classmethod
     def fromStr(cls,str):
         return cls(str.split("-")[0] , str.split("-")[1])
@@ -13,6 +14,7 @@ emp1=employees("piyush", 12000)
 print(emp1.name)
 print(emp1.salary)
 
+# if string is passed like this
 str="gopal-230000"
 emp2=employees.fromStr(str)
 print(emp2.name)
