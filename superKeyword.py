@@ -3,6 +3,7 @@
 
 # let's see example
 
+# --------------wrong program
 # class parentclass:
 #     def student(self):
 #         self.name="piyush"
