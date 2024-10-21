@@ -9,7 +9,6 @@ n=int(input("enter the length of array ="))
 for i in range(n):
     x=int(input("enter the value ="))
     arr.append(x)
-    i=i+i
 
 print(arr)
 
