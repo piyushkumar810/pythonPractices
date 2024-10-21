@@ -24,9 +24,14 @@ class male(Human):
         super().work()
         print("i can code")
 
+    def display(self):
+        print(f"the person {self.name} has {self.num_heart} no of heart")
+
 male_1=male("piyush",1)
 male_1.flirt()
 male_1.work()
 
 print(male_1.num_eyes)
 print(male_1.name)
+
+male_1.display()
