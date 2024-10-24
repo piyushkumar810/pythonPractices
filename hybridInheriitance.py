@@ -17,3 +17,4 @@ class D(B,C):
 
 obj_D=D()
 obj_D.work()
+print(D.mro())
