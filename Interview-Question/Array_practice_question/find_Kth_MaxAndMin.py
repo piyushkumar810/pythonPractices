@@ -1,0 +1,1 @@
+# ---------------------------find kth max and min element in array
