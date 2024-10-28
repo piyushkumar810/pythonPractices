@@ -16,6 +16,9 @@ class cat:
     def quack(self):
         return "meow !"
     
-    def make_it_quack():
-        ConnectionResetError
-        
+def display(obj):
+    obj.quack()
+    print("information displayed")
+
+d=duck()
+display(d)
