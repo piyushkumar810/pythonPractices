@@ -16,4 +16,6 @@ class cat:
     def quack(self):
         return "meow !"
     
-    def make_it_quack()
+    def make_it_quack():
+        ConnectionResetError
+        
