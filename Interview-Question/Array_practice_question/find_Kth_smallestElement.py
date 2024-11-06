@@ -1,4 +1,4 @@
-# ---------------------------find kth max and min element in array
+# ---------------------------find kth smallest element
 
 from array import *
 
