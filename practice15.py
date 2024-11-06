@@ -1,3 +1,21 @@
+# -----------------------------problem
+
+
+# 1) Write a program to calculate and display the payroll for employees based on hours worked and hourly wage. [ODD]
+# Requirements:
+
+# i. Use a struct to store each Employee's details: name, employeeID, hoursWorked, and hourlyWage.
+
+# ii. Calculate the total pay for each employee (total pay = hoursWorked * hourlyWage).
+
+# iii. Use a function calculatePay() to calculate and return the pay.
+
+# iv. Display a summary report listing each employee’s name, hours worked, and total pay.
+
+# v. Use loops and conditionals for processing multiple employees.
+
+# ---------------------------------solution
+
 class employee:
     def employeeDetails(self, EmpName, EmpId, EmpHourWorking, EmpHourleyWages):
         self.EmpName=EmpName
