@@ -40,4 +40,14 @@
 # -----------------------------q4
 x=9
 y=41
-print(x or y, x and y)
+
+print(x or y, x and y) 
+print(x|y , x&y)
+print("\n")
+
+# ---------------------------q5
+print(7//2)
+print(-7//2)
+
+# ----------------------------q6
+print("the banana tree said",",""I'm",1200,"year old.")
