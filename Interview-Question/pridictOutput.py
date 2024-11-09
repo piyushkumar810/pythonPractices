@@ -2,7 +2,7 @@
 #----------------------------------------------------- what will be the output
 
 #  ----------------------q1
-# print("hello{0[0]} and {0[1]}".format(('PW', 'Learner')))
+print("hello{0[0]} and {0[1]}".format(('PW', 'Learner')))
 
 # Explanation
 # The format() method takes a tuple ('PW', 'Learner') as its argument.
@@ -14,16 +14,16 @@
 
 
 # -----------------------q2
-# num2=int(input("num2= "))
+num2=int(input("num2= "))
 # print(num1/num2)
 
 # sol--> runtime error
 
 # ------------------------q3
-# a=8
-# b=4
-# print(a|b)
-# print(a>>2)
+a=8
+b=4
+print(a|b)
+print(a>>2)
 
 # Explanation
 # a | b (Bitwise OR):
