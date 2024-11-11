@@ -40,6 +40,7 @@ while count < 3:
 else:
     print("Loop ended without break")
 
+print("\n")
 # Example with break
 count = 0
 while count < 3:
