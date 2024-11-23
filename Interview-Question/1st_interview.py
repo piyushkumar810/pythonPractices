@@ -8,10 +8,10 @@
         I completed my intermediate education at DAV Public School, Bokaro, and recently graduated 
         from Vinoba Bhave University, Hazaribagh, with an overall CGPA of 7.5.
 
-        During my studies, I acquired various technical skills, including C, C++, Java, Python, HTML, 
+        During my studies, I acquired(learned) various technical skills, including C, C++, Java, Python, HTML, 
         CSS, Node.js, Express.js, and database technologies like MongoDB and MySQL. These skills enabled
         me to successfully develop my final year project, Car Rental System, a full-stack web 
-        application based on the MEAN technology stack (excluding React).
+        application based on the MERN technology stack (excluding React).
 
         With these skills and project experience, I secured a position at Bulwark Software Private
         Limited. While working on projects, I also discovered and honed additional skills such as
@@ -40,9 +40,9 @@
 
 # Q6) can you differentate all the decisions making statements ?
 '''ans-> there are 4 types of decision making statements in pyhton :-
-         1st - if statement
+        1st - if statement
                 this is a simple decision making statement where only true block participate in the 
-                execution , if condition satisfies then it will go for execution otherwise noothing 
+                execution , if condition satisfies then it will go for execution otherwise nothing 
                 for it.
                 
         2nd - if else statement
@@ -54,7 +54,7 @@
               if none of the conditions are true
               
         4th - nested if-else statement
-              in this statement , if block and else block whenever consist of another if-else ststement
+              in this statement , if and else block contains another if-else ststement
               then such type of arrengment is called nested if-else statement
               
         5th - switch (match case in Python 3.10+)
