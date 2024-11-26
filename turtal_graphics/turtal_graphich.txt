@@ -1,0 +1,18 @@
+
+Q.    what is turtal graphich ? 
+Ans-> Turtle Graphics in Python is a module that provides an easy-to-use interface for creating 
+      simple visual drawings and graphics. It's part of Python's standard library, meaning you don't 
+      need to install anything extra to use it. The module is named "turtle" because the concept is 
+      inspired by a robot turtle that could move around a floor while holding a pen to draw.
+
+-->   Key Concepts of Turtle Graphics:
+
+      The Turtle: This is the pen or "artist" that moves around the screen to draw.
+      The Screen: The canvas where the turtle draws.
+      Commands: You control the turtle's movements and actions using various commands to draw shapes,
+      patterns, and designs.
+
+-->   How Turtle Graphics Works:
+      You move the turtle with commands like forward(), backward(), left(), and right().
+      You can lift or lower the pen with commands like penup() and pendown().
+      You can set properties like color, speed, and pen thickness.
