@@ -1,0 +1,10 @@
+using oop in turtle graphics:-
+ 
+why we need this approach ?
+--> there is only one arrow,turtle on the screen but what if you need to use 2,3,4...n turtles then here,
+    we will create turtle objects 
+    for creating turtle object we need a class and here class is "Turtle" t=captial.
+    that why we need object oriented approach 
+
+    
+
