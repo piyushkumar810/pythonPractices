@@ -5,14 +5,33 @@ Ans-> Turtle Graphics in Python is a module that provides an easy-to-use interfa
       need to install anything extra to use it. The module is named "turtle" because the concept is 
       inspired by a robot turtle that could move around a floor while holding a pen to draw.
 
--->   Key Concepts of Turtle Graphics:
-
+-->   Key Concepts of Turtle Graphics:-
       The Turtle: This is the pen or "artist" that moves around the screen to draw.
       The Screen: The canvas where the turtle draws.
       Commands: You control the turtle's movements and actions using various commands to draw shapes,
       patterns, and designs.
 
--->   How Turtle Graphics Works:
+-->   how to use the turtle module / Starting a turtle environment ?
+      1st - import turtle module
+            " import turtle " 
+
+      2nd - now you need a screen to display output
+            " turtle.getscreen() " // but by this the canvas will immediately disappere. to hold the output
+                                      or canvas. another method is:
+
+            " turtal.exitonclick() "// this is used to hold the screen until you click on the screen.
+                                    // and this method will be the last method.   
+
+-->   How Turtle Graphics Works:-
       You move the turtle with commands like forward(), backward(), left(), and right().
       You can lift or lower the pen with commands like penup() and pendown().
       You can set properties like color, speed, and pen thickness.
+
+
+--> Turtle methods
+           Turtle motion
+                Move and draw
+                        forward() | fd()
+                        backward() | bk() | back()
+                        right() | rt()
+                        left() | lt()
