@@ -6,5 +6,151 @@ why we need this approach ?
     for creating turtle object we need a class and here class is "Turtle" t=captial.
     that why we need object oriented approach 
 
-    
+    # how to import turtle (when you work with object)
 
+    form turtle import Turtle
+    t=Turtle()
+    t1=Turtle()
+    12=Turtle()
+
+    t.forward(100)
+    t1.forward(100)
+
+    ------------------or----------------
+
+    impot turtle as t
+    abc=t.Turtle()
+
+    ------------------or-----------------
+    
+    # this case is not used
+
+    form turtle import *
+    abc=Turtle()
+    # here you don't need to write down abc.backword(100) , here you simply write forward(100).
+    forward(100)
+
+
+---------------------------------------color control----------------------------------------
+--> color()
+--> pencolor()
+--> fillcolor()
+
+
+--> pencolor()
+    syntax:- turtle.pencolor(*args)
+    the pencolor() function is used to set or get the current pen's color.The pen color determines the
+    color of the lines drawn by the turtle.
+    
+    you can give :-      turtle.pencolor("red)
+    you can also give :- RGB values (e.g., (0.5, 0.2, 0.8) for purple-like shades).
+
+
+    # to get which pencolor you are using :
+    color = turtle.pencolor()  # Returns the current pen color
+    print(color)               # Prints the current color, e.g., 'red'
+
+
+--> fillcolor()
+    syntax:- turtle.fillcolor(*args)
+    the fillcolor() function is used to set or get the fill color of shapes drawn by the turtle. 
+    The fill color determines the color of the interior of closed shapes (e.g., circles, rectangles) 
+    when the shape is filled.
+
+    You can specify the color using:-
+    Color names (e.g., "blue", "green", "red", etc.)
+    RGB values (e.g., (0.5, 0.2, 0.8)).
+
+
+    # to get which fillcolor you are using :
+    color = turtle.fillcolor()  # Returns the current fill color
+    print(color)                # Prints the fill color, e.g., 'yellow'
+
+    # Filling a shape: To use the fill color, you need to:
+        - Start the filling with turtle.begin_fill().
+        - Draw the shape.
+        - End the filling with turtle.end_fill().
+
+
+
+--> color()
+    syntax:- turtle.color(*args)
+    it is the combination of both pencolor and fillcolor.
+
+    the color() function is a convenient way to set both the pen color (outline) and the fill color
+    of the turtle in a single step.
+
+    syntax:- turtle.color(pen_color, fill_color)
+    turtle.color("blue", "yellow") # seperately given both color
+    turtle.color("red")            # Both the pen and fill color will be red
+
+    to Get the current colors:-
+    pen_color, fill_color = turtle.color()     # Returns a tuple of (pen_color, fill_color)
+    print("Pen color:", pen_color, "Fill color:", fill_color)
+
+
+
+---------------------------------------------Drawing state---------------------------------------
+
+--> penup() | pu() | up()   ----- in case you have to go forward but dont want to draw anything , then use
+                                   penup() method
+
+--> pendown() | pd() | down()---- if your pen is up that means you are not drawing anyhting before Start
+                                  drawing keep pendown()
+
+--> pensize() | width()     ----- controle the size of the pen 
+                                   turtle.pensize()
+                                   1
+                                   turtle.pensize(10)
+
+--> isdown()---------------------- Return True if pen is down, False if it’s up.(it is used only for 
+                                    checking that pen is up or down)
+
+
+
+------------------------------------------turtle state----------------------------------------------
+Visibility
+
+--> showturtle() | st()  ---- Makes the turtle visible on the screen.
+                              If the turtle is hidden, this command will display it again.
+
+--> hideturtle() | ht() ----- Hides the turtle icon from the screen.
+                              Even when the turtle is hidden, it continues to draw lines and shape.
+
+--> isvisible()        ------ Checks whether the turtle is currently visible.
+                              Returns True if the turtle is visible, otherwise False.
+
+
+
+-----------------------------------------turtle position -------------------------------------------
+
+turtle.position()  | pos() ---- function is used to get the current position of the turtle on the screen
+                                . It returns the coordinates of the turtle as a tuple (x, y).
+
+                                Default Position:
+                                When a turtle is created, its default position is (0, 0)
+                                (the center of the screen).
+
+
+            Notes:-
+
+            The position returned by pos() is in the coordinate system of the turtle graphics window, 
+            where:
+
+            -- (0, 0) is the center.
+            -- Positive x moves to the right.
+            -- Positive y moves upward.
+
+            Use setpos() or goto() to move the turtle to a specific position.
+
+
+turtle.goto()---the goto() function is used to move the turtle to a specific position on the screen. 
+                The movement can be either direct (without drawing) or accompanied by drawing a 
+                straight line from the current position to the target position.
+ 
+                syntax:
+                turtle.goto(x, y)
+
+                -- (0, 0) is the center of the screen.
+                -- Positive x is to the right, and negative x is to the left.
+                -- Positive y is upward, and negative y is downward.
