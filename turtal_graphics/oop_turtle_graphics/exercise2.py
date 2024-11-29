@@ -21,3 +21,21 @@ for i in range(3,11):
     i+=1
 
 s1.exitonclick()
+
+# ----------------------------------------or--------------------------------------------
+
+# import random
+# from turtle import Turtle,Screen
+# s1=Screen()
+# t1=Turtle()
+
+# col=["black", "red", "green","azure2","blanchedalmond","cadetblue1", "yellow", "orange", "aqua","pink", "blue", "gray","aquamarine3", "antiquewhite3"]
+# for i in range(3,11):
+#     angle=360/i
+#     t1.pencolor(random.choice(col))
+
+#     for _ in range(i):
+#         t1.forward(100)
+#         t1.right(angle)
+
+# s1.exitonclick()
