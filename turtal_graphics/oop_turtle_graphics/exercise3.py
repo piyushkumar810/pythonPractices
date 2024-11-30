@@ -8,7 +8,7 @@ s1=Screen()
 t1.speed("fastest")
 t1.width(10)
 # t1.shape("turtle")
-col=["black", "red", "green","azure2","blanchedalmond","cadetblue1", "yellow", "orange", "aqua","pink", "blue", "gray","aquamarine3", "antiquewhite3"]
+# col=["black", "red", "green","azure2","blanchedalmond","cadetblue1", "yellow", "orange", "aqua","pink", "blue", "gray","aquamarine3", "antiquewhite3"]
 turtle.colormode(255)
 
 for _ in range(100):
