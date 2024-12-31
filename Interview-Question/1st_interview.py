@@ -17,6 +17,7 @@
         Limited. While working on projects, I also discovered and honed additional skills such as
         problem-solving, time management, teamwork, and adaptability.'''
 
+
 # Q2) you have any achievements in your carrier ?
 '''ans-> My Achievements:
         During my graduation, I achieved a CGPA of 7.5 in my final year. Additionally, 
