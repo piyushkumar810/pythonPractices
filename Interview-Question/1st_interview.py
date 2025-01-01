@@ -1,6 +1,5 @@
 # -------------------------------------1st python interview
 
-
 # Q1) introduce yourself in brief ?
 ''' ans--> Good afternoon, sir/ma'am. My name is Piyush Kumar.
         In my family, apart from my parents, I have one elder brother and one elder sister.
@@ -16,7 +15,6 @@
         With these skills and project experience, I secured a position at Bulwark Software Private
         Limited. While working on projects, I also discovered and honed additional skills such as
         problem-solving, time management, teamwork, and adaptability.'''
-
 
 # Q2) you have any achievements in your carrier ?
 '''ans-> My Achievements:
