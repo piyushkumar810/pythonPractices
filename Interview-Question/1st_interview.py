@@ -90,7 +90,6 @@
 # print(result)
 
 
-
 # Q8) what is the difference between list and tuple ?
 '''ans -> 1st-> list are mutable object on the other hand tuple are immutable objects .
           2nd-> list is denoted with square bracket on the other hand tuple is denoted by 
@@ -174,6 +173,7 @@ result=palindrome(str)
 '''ans->  inheritance allows a class (child class) to inherit methods and properties
           from another class (parent class). This helps in reusing code and 
           extending functionality.'''
+
 
 # Q19) what is mro ?
 '''ans -> The MRO determines the order in which methods are looked up in the class
