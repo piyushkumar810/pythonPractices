@@ -1,5 +1,5 @@
 # -------------------------------------Series
-''' it is defined as One-Demesional array that is capable of storing various data types.'''
+''' it is defined as One-Demesional array that is capable of storing various data types (e.g. integers, strings, floats).'''
 
 import pandas as pd
 
