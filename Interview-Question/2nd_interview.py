@@ -1,3 +1,5 @@
+# ----------------------------------- pyhton basic to advanced questions --------------------------------
+
 # Q1) what is pyhton?
 '''ans -> python is a versitile and high level programmig language which is known for its simplicity and 
          redability. it is widely used in various domain llike web- development , app devlopment
@@ -7,6 +9,7 @@
           dynamic typed - means we don't need to declear variable explicitly.
           oop feature.
           extensive libraries.'''
+
 
 # Q2) difference between map and filter?
 ''' ans -> map -> the map() function is used to apply a specific function to every item in an iterable 
@@ -23,6 +26,7 @@
                   
                   here output size may decreases because of filitration.'''
 
+
 # Q3) what are loop control statement in python?
 ''' ans -> the loop control statement in python alloow you to alter the normal flow of a loop.
            there are 3 types of loop control statement in pyhton.
@@ -31,12 +35,14 @@
            2nd -> continue statement(skips the current intration and goes to the next iteration.)
            3rd -> pass statement (it does nothing and allows the code to continue running)'''
 
+
 # Q4) what are keywprds in pyhton?
 ''' ans -> the keyword are the reversed word which are used as identifiers, function name and more.
 
            they help define the structure and syntax of the language.
 
            eg:- False, True, and, if, elif, def, break, continue, return, pass, for etc...'''
+
 
 # Q5) what are literals in python?
 ''' ans -> literals in python refers to the data that is given in a vriable or constant.
@@ -48,6 +54,7 @@
            3rd -> boolean literal: represent True or False.
            4th -> special literal: "None" is a good example.'''
 
+
 # Q6) how can you concatenate two tuples?
 '''sol -> simply we use + (addition symbol)
            eg:-
@@ -56,6 +63,7 @@
 
                print(tuple1 + tuple2)  // (1, "piyush", 32.5, True, 2, None)
                print(tuple2 + tuple1)  // (True, 2, None, 1, "piyush", 32.5)''' 
+
 
 # Q7) how can you initialize a 5*5 NumPy array with only zeros?
 ''' sol -> NumPy has a brilliant function - zeros() that do this:-
@@ -68,6 +76,7 @@
                                              [0,0,0,0,0]
                                              [0,0,0,0,0]]'''
         
+
 # Q8) what is pandas?
 ''' ans-> pandas is an open-source library that has a very rich set of data structure for data based
           operation.
