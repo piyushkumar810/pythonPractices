@@ -54,3 +54,20 @@ varP2=np.array([6,7,8,9,5])
 pow=np.pow(varP1,varP2)
 print(pow)
 print("\n")
+
+# -------------------------- reciprocal
+varRep=np.array([3,6,1,8])
+repArr=np.reciprocal(varRep)
+print(repArr)
+print("\n")
+
+#---------------- working with 2-d array
+var2d=np.array([[2,5,7],[5,8,9]])
+var2da=np.array([[4,5,7],[6,1,2]])
+sum=np.add(var2d,var2da)
+# sum=var2d+var2da
+print(var2d)
+print()
+print(var2da)
+print()
+print(sum)
