@@ -53,3 +53,9 @@ print('\n')
 # using nditer()
 for d in np.nditer(var3):
     print(d)
+
+
+# if you want value with there index --> use "ndenumerate()"
+print("\n")
+for e,f in np.ndenumerate(var3):
+    print(e,f)
