@@ -38,3 +38,18 @@ for k in var2:
 4
 3
 '''
+
+print("\n")
+# here comes the function "nditer()" so that you can easily iterate multideentional  array
+var3=np.array([[[1,4,7,9],[9,6,4,3]]])
+print(var3)
+print()
+for a in var3:
+    for b in a:
+        for c in b:
+            print(c)
+
+print('\n')
+# using nditer()
+for d in np.nditer(var3):
+    print(d)
