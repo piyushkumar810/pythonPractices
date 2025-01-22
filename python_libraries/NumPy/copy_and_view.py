@@ -1,4 +1,4 @@
-# -------------------------------- copy vs view in numpy array
+# -------------------------------- copy vs view in numpy array(lec-12)
 
 import numpy as np
 
