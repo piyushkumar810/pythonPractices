@@ -36,7 +36,7 @@
            3rd -> pass statement (it does nothing and allows the code to continue running)'''
 
 
-# Q4) what are keywprds in pyhton?
+# Q4) what are keywords in pyhton?
 ''' ans -> the keyword are the reversed word which are used as identifiers, function name and more.
 
            they help define the structure and syntax of the language.
@@ -78,10 +78,94 @@
         
 
 # Q8) what is pandas?
-''' ans-> pandas is an open-source library that has a very rich set of data structure for data based
-          operation.
-          
-          pandas can deals with a large varities of files and is one of the most important tools
-          to have a grip on.
-          
-          it provides two fantastic data structure - Series and DataFrames.'''
+'''
+•	It is one of the most important python library that is used for data analysis.
+•	It was created by wes mckinney in 2008.
+•	It has functions for analyzing, cleaning, exploring and manipulating data.
+•	It can read and data structure of different formats like:- csv, Json, zip, text, xml etc.(matlab Kisi v file formate k saath kam ker Sakata hai).
+'''
+
+# Q9) what are dataFrames?
+'''
+dataFrames are two-dimensional, tabular data structure, similar to the spreadsheet or sql table, it consists of row 
+and columns where each column holds the data of the specific type(eg:- integer, float, string).
+
+it is mutable.
+you ca store hetrogeneous data. 
+it is widely used for data manipulation and analysis in python.
+'''
+
+# Q10) what are panda series?
+'''
+series is one-deminational pandas data structure that supports data of almost any type.
+
+interviewer can ask is'at series inafficient?
+ans--> no we cannot say ti is inafficient because if my project requires working of single-dimenational data 
+structure the why i will complicate with dataFrame insted i will use series.
+'''
+
+# Q11) what is the use of pandas "groupby()" function?
+'''
+groupby() is a feature supported by pandas which is used to split and group an object.
+
+like the sql, Mysql and oracal groupby, it is used to group the data by classes and entities which can be further 
+used for aggregation.
+
+ex:- 
+
+import pandas as pd
+x=pd.DataFrame({'vechicle': ['kia', 'lamborghini', 'ktm', 'pulsar200' ,'lexes', 'tata safari'],
+                'type':['car', 'car', 'bike', 'bike', 'car', 'car']})
+print(x)
+print(type(x))
+print("\n")
+count_of_total=x.groupby('type').count()
+print(count_of_total)
+
+'''
+
+# Q12) how to create a dataFrame from a lists?
+'''
+import pandas as pd
+
+# 1st create an empty dataFrame 
+x=pd.DataFrame()
+
+# this are the lists data which we have to convert into dataFrame
+bikes=['bajaj', 'tvs', 'honda', 'kawasaki', 'bmw']
+cars=['lamborghini', 'masserati', 'hyundai', 'ford', 'farreri']
+
+# 2nd addition of lists as individual columns in the dataFrame
+x['bikes']=bikes
+x['cars']=cars
+
+print(x)
+print(type(x))
+
+'''
+
+# Q13) how to create dataFrame from dictionary?
+'''
+# the dictionary cann be directly passed as an argument to the dataframe() function to create dataFrame.
+
+import pandas as pd
+
+bikes=['bajaj', 'tvs', 'honda', 'kawasaki', 'bmw']
+cars=['lamborghini', 'masserati', 'hyundai', 'ford', 'farreri']
+
+d={"cars":cars, 'bikes':bikes}
+
+x=pd.DataFrame(d)
+
+print(x)
+print(type(x))
+
+'''
+
+# Q14) how to combine the dataFrames using "join()" function?
+'''
+join is used when we need to extract data from different dataFrames which 
+''' 
+import pandas as pd
+
+x1=pd.DataFrame({})
