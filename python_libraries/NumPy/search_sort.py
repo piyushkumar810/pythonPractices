@@ -65,3 +65,7 @@ print("\n")
 var6=np.array([4,6,8,0,2,4,35,54,56,32,45,467])
 print(var6)
 print()
+x=[True,True,True,False,True,False,True,True,True,False,False,False]
+filter_arr=var6[x]
+print(filter_arr)
+print(type(filter_arr))
