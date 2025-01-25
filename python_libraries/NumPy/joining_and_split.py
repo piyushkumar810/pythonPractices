@@ -1,6 +1,6 @@
 # --------------------- joining and split in NumPy array using(concatenate, stack, array_split) -(lec-13)
 
-# join --> joining means putting content of two and more array into a single array.
+# join --> joining means putting content of two and more array into a single array. used--> "concatenate()"
 
 import numpy as np
 var1=np.array([1,3,4,5,7])
@@ -34,7 +34,7 @@ stackVar=np.stack((var5,var6), axis=0)
 print(stackVar)
 print("\n")
 
-# split()--> splitting breaks one array into multiple.
+# split()--> splitting breaks one array into multiple. used-->"array_split()"
 
 var7=np.array([6,8,9,4,5,2])
 print(var7)
