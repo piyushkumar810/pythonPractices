@@ -32,7 +32,13 @@
         there are some rules to define a variable:-
         --> a variable can be made up of (alphabets, underscore and numbers)
         --> a variable can start with alphabets and underscore
-        --> no keywords can be used to create a variable'''
+
+        Rules:-
+        --> no keywords can be used to create a variable
+        --> the 1st letter of variable should be small.
+        --> variable name should not be seperated with space.
+        --> the 1st letter should not start with number or special symbol.
+        '''
 
 # Q5) what is the use of decision making statements ?
 '''ans-> decision making statements are used to make decisions based to some conditions '''
