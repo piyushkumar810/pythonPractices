@@ -7,6 +7,12 @@ CSV file -> csv formate is a plain text formate in which values are seperated by
 
 excel file-> it is a excel sheet binary file formate which holds information about all the worksheets in a 
              file, including both content and formatting.
+             
+          #    to work with excel sheet you need to doownload
+                pip install openpyxl
+
+          #    and if you want to use it ?
+                variable_name=pd.read_excel("address of that excel sheet")
 '''
 
 # write csv file
