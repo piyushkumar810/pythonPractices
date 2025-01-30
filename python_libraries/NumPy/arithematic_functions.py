@@ -1,4 +1,4 @@
-# ------------------------------------ basic arihthmatic functions in numpy array(lec-08)
+# ------------------------------------ basic aggregating functions in numpy array(lec-08)
 
 import numpy as np
 # --------------------------min(x)
@@ -49,3 +49,22 @@ print()
 var6=np.array([1,4,7,9])
 cumsumResult=np.cumsum(var6)
 print(cumsumResult)
+print()
+# like that we have comulative product
+cumprodResult1=np.cumprod(var6)
+print(cumprodResult1) 
+print()
+
+# ---------------------------------------- real use case of comulative product--------------------------
+arr1=[100,150,199,200,250,130]
+arr2=[10,50,30,40,30,10]
+
+quantity=np.array(arr2)
+price=np.array(arr1)
+
+print(quantity, "\n", price)
+print()
+c=np.cumprod([quantity,price], axis=0)
+print(c)
+# i need total cost
+print("sum = ",c[1].sum())
