@@ -14,7 +14,12 @@ x2=np.where((var%2)==0)
 print(x2)
 print("\n")
 
-# ---------- "search sorted" array (which perform a binary search in the array, and return the index where the specified value would be inserted to maintained the search order)
+
+# --------------------------------searchSorted()
+# The numpy.searchsorted() function is used to find the index where a given value should be inserted into a sorted array to maintain order.
+# Explanation:
+# It searches for the position where a specified value would fit in an already sorted array.
+# It returns the index at which the value should be inserted.
 var1=np.array([2,4,6,7,10,12,13,16])
 
 x2=np.searchsorted(var1, 5)
