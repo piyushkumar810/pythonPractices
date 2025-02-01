@@ -32,11 +32,16 @@ print(df)
 # Convert Employee Salary to float (if necessary)
 df["Employee Salary"] = df["Employee Salary"].astype(float)
 
-# # Plot the bar chart
-# plt.figure(figsize=(10, 5))
-# plt.bar(df["Department"], df["Employee Salary"], color="skyblue")
-# plt.xticks(rotation=45)  # Rotate department labels for better readability
-# plt.xlabel("Department")
-# plt.ylabel("Employee Salary")
-# plt.title("Employee Salary by Department")
+grouped_by=df.groupby("Department")["Employee Salary"].sum()
+print(grouped_by)
+# plt.bar(grouped_by.index, grouped_by.values)
 # plt.show()
+
+# Plot the bar chart
+plt.figure(figsize=(10, 5))
+plt.bar(df["Department"], df["Employee Salary"], color="skyblue")
+plt.xticks(rotation=45)  # Rotate department labels for better readability
+plt.xlabel("Department")
+plt.ylabel("Employee Salary")
+plt.title("Employee Salary by Department")
+plt.show()
