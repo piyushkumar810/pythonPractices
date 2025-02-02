@@ -23,11 +23,12 @@ plt.legend()
 plt.subplot(2, 1, 2)
 plt.plot(x, y2, color="b", label="Cosine Wave")
 plt.title("Cosine Wave")
+plt.suptitle("Trignometric functions")
 plt.legend()
 
 '''
 Explanation of plt.subplot(2, 1, 1)
-(rows, columns, index)
+(rows, columns, chart number)
 
 2, 1 → 2 rows, 1 column (stacked vertically).
 1 → First subplot (Sine Wave).
