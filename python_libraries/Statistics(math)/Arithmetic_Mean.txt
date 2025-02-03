@@ -1,0 +1,63 @@
+------------------------------------------- Arithemetic Mean --------------------------------------------
+"Arithemetic mean is simply means average"
+
+# formula :
+  A.M = sum of observation / total no of observation
+
+#example :
+Q) find the AM of 10 observation 2,3,7,9,4,1,6,9,8,7
+
+sol->  AM = 2+3+7+9+4+1+6+9+8+7 / 10
+          = 56 / 10
+          = 5.6 ans
+
+# formula : 
+  Sum of n natural number = n(n+1)/2  
+
+#example :
+Q) find the AM of 1,2,3 ... 100th term 
+sol -> here the formula will be :
+       AM = sum of n natural number / total no of observation
+          = (n(n+1)/2) / 100
+          = (100(100+1)/2) / 100
+          = (100 * 101)/200
+          = 101/2
+          = 50.5 ans
+
+         ------------- or ------------
+
+         one more formula to find AM of 1st N natural number = n+1/2 
+
+         #example : 
+         Q) find the AM of 50 term which are 2,4,6,8 ... 50 term
+         sol ->  AM of 2,4,6,8 ... 50 term
+                 (2+4+6+8+ ... +100)
+                 2(1+2+3+4+...+50)
+                 2(AM of 1st 50 natural number)
+                 2(n+1)/2
+                 2(50+1)/2
+                 2(51)/2
+                 51 ans
+
+--------------------------------- properties of Arithematic Mean
+# property 1:-
+
+  if be add or substract any constant (K) in every observation then the Arithematic Mean is also 
+  increased or descreased by K constant. it is also called (chang of origin)
+  "AM ∝ change of origin"
+
+  example: 
+    Q1) if the AM of marks of 50 boys is 2.5, after some time teacher decided to give 10 grace marks to each
+        of them then the new Arithematic Mean is.
+    sol -> the AM of 50 student = 25
+           10 grace marks given to each student
+
+           new AM = 25+10
+                  = 35 ans   (by property)
+
+# property 2:- 
+ 
+  if be multiply or divide any non-zero constant (K) in every observation then the Arithematic Mean is also 
+  multiplied and divided by K constant. it is also called (chang of scale)
+  "AM ∝ change of scale"
+
