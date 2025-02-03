@@ -1,3 +1,17 @@
+'''
+What is a Line Plot?
+A line plot (line chart) is used to represent data points over a continuous interval, typically time. 
+It connects individual data points with a line, making it easier to see trends, patterns, and fluctuations 
+in the data.
+
+Role of Line Plot in Data Analysis
+✅ Trend Analysis --> Helps track increases, decreases, and fluctuations over time.
+✅ Comparison --> Multiple lines can compare different data sets.
+✅ Forecasting --> Useful in predicting future trends based on historical data.
+✅ Identifying Patterns --> Shows seasonal patterns, peaks, or anomalies.
+
+'''
+
 import matplotlib.pyplot as plt
 
 restaurent=["Day1", "Day2", "Day3", "Day4","Day5"]

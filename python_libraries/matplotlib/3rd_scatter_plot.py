@@ -1,6 +1,11 @@
 # scatter plot:- the data will be scattered at the different-different points. 
                 #  this is useful when you are plotting the graph between numbers to numbers (means x and y axis both will be number)
 
+'''
+A scatter plot is used to visualize relationships and correlations between two numerical variables. 
+Each data point represents a single observation, plotted along the X-axis and Y-axis.
+'''
+
 import matplotlib.pyplot as plt
 import numpy as np
 

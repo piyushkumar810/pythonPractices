@@ -1,4 +1,13 @@
 # ------------------------------------ bar chart in matplotlib
+'''
+A bar plot (bar chart) represents categorical data using rectangular bars.
+
+When to Use a Bar Plot?
+✅ Categorical data (e.g., brands, departments, age groups).
+✅ Comparison between different categories.
+✅ Emphasizing differences between values.
+
+'''
 
 import matplotlib.pyplot as plt
 
@@ -18,4 +27,25 @@ plt.ylabel("popularity", fontsize=15)
 plt.title("popularity of differente parts of harry potter",fontsize=17)
 
 # it will show the output on white screen
+plt.show()
+
+
+# --------------------------------------- grouped bar chart
+import numpy as np
+
+brands = ["OnePlus", "Apple", "Vivo", "Redmi", "Samsung"]
+users_2023 = [13, 25, 22, 18, 22]
+users_2024 = [15, 28, 20, 19, 25]
+
+x = np.arange(len(brands))  # Positions for bars
+
+plt.bar(x - 0.2, users_2023, width=0.4, label="2023", color="blue")
+plt.bar(x + 0.2, users_2024, width=0.4, label="2024", color="red")
+
+plt.xticks(x, brands)  # Set category labels
+
+plt.xlabel("Brands")
+plt.ylabel("Number of Users")
+plt.title("Mobile Phone Users Comparison (2023 vs 2024)")
+plt.legend()
 plt.show()

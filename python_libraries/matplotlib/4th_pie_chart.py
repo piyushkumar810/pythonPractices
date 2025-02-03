@@ -1,5 +1,22 @@
 # ------------------------------------ pie chart
-# pie chart is a circular chart which is helpful is showing overall data in percentage 
+'''
+What is a Pie Chart?
+A pie chart is a circular chart divided into slices to illustrate proportions of different categories in a 
+dataset. Each slice represents a percentage of the total.
+
+Why Use a Pie Chart in Data Analysis?
+✅ Shows Proportion & Distribution:
+        Helps understand which category has the largest share.
+        Example: Market share of mobile brands.
+
+✅ Easy to Interpret:
+        Provides a quick visual summary of data.
+
+🚫 Limitations:
+        Not ideal for large datasets (too many slices make it cluttered).
+        Difficult to compare small differences between categories.
+
+''' 
 
 import matplotlib.pyplot as plt
 
