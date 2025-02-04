@@ -40,7 +40,6 @@ plt.tight_layout()  # Adjust spacing
 plt.show()
 
 
-
 # ----------------------------------------- explained linespac() function of numpy
 
 '''
