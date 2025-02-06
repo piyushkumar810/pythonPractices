@@ -15,6 +15,7 @@ class students:
         self.__names="piyush"
 
 
+
 b=students()
 # print(b.__names)----->cannot accessed directily because it is private variable
 print(b._students__names)
