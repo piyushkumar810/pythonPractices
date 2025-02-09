@@ -7,7 +7,7 @@ users = [13, 25, 22, 18, 22]
 
 ex=[0,0.1,0,0,0]
 
-plt.figure(figsize=(7, 7))  # Set figure size
+plt.figure(figsize=(7, 7))  # Set figure  size
 plt.pie(users, labels=brands, autopct="%1.1f%%", startangle=140, colors=["red", "blue", "green", "orange", "purple"], explode=ex, shadow=True)
 plt.title("Market Share of Smartphone Brands")
 
