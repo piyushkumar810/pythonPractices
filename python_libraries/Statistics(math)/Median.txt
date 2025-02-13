@@ -1,1 +1,72 @@
 -------------------------------------------- Median -------------------------------------------
+if x1,x2,x3 ... xn
+1st -> arrange the number in assending or descending order
+2nd -> count of total no is odd or even
+
+-------------- if n is odd-----------------                          ------------- if n is even-------------
+
+Median= (n+1/2)th term                                               median = ((n/2)th + (n/2+1)th) / 2
+
+eg:-                                                                 eg: 
+find the median of data:                                             find the median of data:
+2,4,6,9,5,15,12,19,13                                                9,12,7,5,6,8,20,21,25,27,30,2
+  
+arrange : 2,4,5,6,9,12,13,15,19                                      arrange : 2,5,6,7,8,9,12,20,21,25,27,30
+no is odd                                                            no is even
+
+median = (n+1/2)th term                                              median = ((n/2)th term + (n/2+1)th term)/2
+       = (10/2)th term                                                      = ((12/2)th term + (12/2+1)th term)/2
+       = 5th term                                                           = ((6)th term +(7)th term)/2
+       = 9 ans                                                              = (9+12)/2
+                                                                            = 21/2
+                                                                            = 10.5 ans
+
+
+
+--> formula 2:-
+---------------------------------median of contineous frequency distribution -----------------------------------
+
+step 1: prepare the commulative frequency column (c.f)
+step 2: find (N/2)
+step 3: see the c.f just greater then (N/2) and determine the corresponding class, this class is known as the median class
+step 4: use the formula : 
+         median = l+i/f(N/2 - Cp)
+
+         where, l= lower limit of median class
+                f= frequency of the median class
+                i= width of the median class interval
+                Cp= commulative frequency of previous class
+
+
+Example:-
+
+Consider the following frequency distribution:
+
+Class Interval	Frequency (f)	Cumulative Frequency (CF)
+0 - 10	               5	             5
+10 - 20	               8	             13
+20 - 30	              15	             28
+30 - 40	              10	             38
+40 - 50	               7	             45
+
+Step 1: Find N/2
+Total frequency (N) = 5+8+15+10+7=45
+N/2 = 45/2 = 22.5
+
+Step 2: Identify the median class 
+The class where cumulative frequency just exceeds 22.5 is (20 - 30) (CF = 28). 
+
+Step 3: Apply the formula
+                median = l+i/f(N/2 - Cp)
+
+                L =20(lower boundary of the median class) 
+                CF=13(cumulative frequency before the median class) 
+                f=15 (frequency of the median class) 
+                h=10 (class width) 
+                Median=20
+
+                Median = 20+(22.5−13/15​×10) 
+                       = 20+(9.5/15×10)
+                       = 20 +(0.6333*10) 
+                       = 20+6.33 
+                       = 26.33 ans
