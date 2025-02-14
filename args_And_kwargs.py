@@ -2,7 +2,7 @@
 
 # --------- *args
 # it allow you to pass variable number  of non keyword argument to a function
-#  it takes all the argument in tuple form(tuple is immutable) 
+#  it takes all the argument  in tuple form(tuple is immutable) 
 # eg
 def my_fun(*args):
     c=0
