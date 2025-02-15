@@ -13,7 +13,7 @@ finally:
 print("\n")
 
 # ----------------here one question arrises
-# what is the difference between above program and this program
+# what is the difference between above program and  this program
 try:
     a=[4,7,9,5]
     n=int(input("Enter the index : "))
