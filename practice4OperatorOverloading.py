@@ -12,7 +12,7 @@ class person:
             return False
 
 p1=person("piyush", 22)
-p2=person("pappu", 23)
+p2=person("suraj", 23)
 
 if(p1>p2):
     print(f"{p1.name} has to pay the bill")
