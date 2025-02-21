@@ -355,5 +355,192 @@ note:- dont forget to terminate recursion, it will raise problem .
 
 # Q30) explain python list comprehension ?
 '''
+list comphrehension is best way to transform one list into another list.
 
+list comphrehension is generally more compact and faster than normal function or loop for creating list.
+
+
+example:-
+my_list=[10,20,30,40,50]
+print(my_list)
+
+new_list=[(x+2) for x in my_list ]
+print(new_list)
+'''
+
+# Q31) what is the use of bytes() function ?
+'''
+The bytes() function in Python creates immutable byte sequences. Think of it as a way to store 
+binary data (like files, network data, or encrypted messages).
+
+example:- 
+b = bytes([65, 66, 67])
+print(b)  # Output: b'ABC'
+'''
+
+# Q32) what is 'with statement' used for in python ?
+'''
+The with statement in Python is used to handle resources like files, network connections, 
+and database connections efficiently. It ensures that resources are automatically closed 
+after they are used, even if an error occurs.
+
+Why Use with?
+✅ Avoids manual closing of resources
+✅ Prevents memory leaks
+✅ Makes code cleaner & readable
+
+
+# ---------Example: Using with for File Handling
+with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)  # Reads and prints the file content
+# File automatically closes after this block
+
+
+# ----------Without with, you would have to write:
+file = open("example.txt", "r")
+content = file.read()
+file.close()  # Must be done manually
+'''
+
+# Q33) what is a map() function in python ?
+'''
+a map function in python is used for appling a function on all elements of a specific iterable
+
+--> it consist of two parameters, function and iterable (it can be list, tuple, anything..)
+
+example:- 
+def cube(x):
+    return x*x*x
+
+list1=[3,5,6,2,8,9,11]
+# list2=map(cube,list1) #it will return object you will have to convert it into list
+list2=list(map(cube,list1))
+print(list2)  # output [27, 125, 216, 8, 512, 729, 1331]
+'''
+
+# Q34) what is __init__ in python ?
+'''
+--> the __init__ method is a reserved method in python.
+--> it is also known as constructor in the world of oops.
+--> when an object of class is created, the __init__ method is automatically 
+    called to access the class attributes.
+'''
+
+# Q35) what are the tools present to perform 'static analysis' ?
+'''
+static analysis tools are use to find bugs in python progam :- 
+
+there are two static analysis tools:
+1st--> pychecker (detects bugs from source code and warns about its style and complexity.)
+2nd--> pylint (checks whether the module matches up to a set coding standareed or not)
+'''
+
+# Q36) what is the difference between a tuple and a dictionary ?
+'''
+Tuple vs Dictionary in Python
+
+Feature	                Tuple (tuple)	                                    Dictionary (dict)
+----------       -------------------------------                     ----------------------------------
+Definition	     An ordered collection of elements	                 A key-value pair collection
+Mutability	     Immutable (cannot be changed after creation)	     Mutable (values can be changed)
+Indexing	     Indexed by position (e.g., tuple[0])	             Indexed by keys (e.g., dict["name"])
+Duplicates	     Can have duplicate values	                         Keys must be unique, but values can be duplicated
+Performance      Faster (due to immutability)	                     Slightly slower (due to key lookup)
+
+'''
+
+# Q37) what is pass in python ?
+'''
+The pass statement in Python is a placeholder that does nothing when executed.
+the function, class and loop uses pass it means that it will defined later.
+--> is the statement ignored by the interpreter?
+    no this statement is not ignored by the interpreter.
+
+example: 
+
+# ------------------- empty function placeholder
+def my_function():
+    pass  # To be implemented later
+
+print("Function defined successfully!")
+
+
+# ------------------- empty class placeholder
+class MyClass:
+    pass  # Will add methods later
+
+
+# ------------------- using pass in loops
+for i in range(5):
+    if i == 2:
+        pass  # Skip execution but avoid syntax errors
+    else:
+        print(i)
+'''
+
+# Q38) how can an object be copid in python ?
+'''
+not all object can be copid in python, but most can.
+
+In Python, objects can be copied using different methods depending on whether you need a shallow copy or a deep copy.
+
+1️⃣ Shallow Copy (copy.copy())
+🔹 Creates a new object but keeps references to nested objects
+
+----example: -
+import copy
+
+original = [1, [2, 3], 4]
+shallow_copy = copy.copy(original)
+
+shallow_copy[1][0] = 99  # Modifies the original object too!
+
+print(original)       # Output: [1, [99, 3], 4]
+print(shallow_copy)   # Output: [1, [99, 3], 4]
+
+
+2️⃣ Deep Copy (copy.deepcopy())
+🔹 Creates a completely independent copy, including nested objects
+
+------- example :-
+import copy
+
+original = [1, [2, 3], 4]
+deep_copy = copy.deepcopy(original)
+
+deep_copy[1][0] = 99  # Does NOT affect the original!
+
+print(original)      # Output: [1, [2, 3], 4]
+print(deep_copy)     # Output: [1, [99, 3], 4]
+
+
+note:- Immutable objects (int, str, tuple) don’t need copying since they can't be changed.
+'''
+
+# Q39) how can a number be converted to a string ? 
+'''
+the inbuilt function "str()" can be used to convert a number to a string
+
+example: -
+n=10
+print(type(n))
+new_n=str(n)
+print(type(new_n))
+'''
+
+# Q40) what are modules and packages in python ?
+'''
+Feature	                    Module	                                          Package
+--------              -----------------------                        ----------------------------
+What is it?	          A single Python file (.py)	                 A folder containing multiple modules
+Purpose	              Stores related functions & classes	         Groups related modules together
+Example	              math.py	                                     numpy, pandas (which have many modules inside)
+Import	              import module_name	                         from package_name import module_name
+
+real life example :
+Think of modules as books 📖 and packages as a library 📚.
+
+A module (math.py) is one book with formulas.
+A package (numpy) is a library with multiple books (modules) on mathematics.
 '''
