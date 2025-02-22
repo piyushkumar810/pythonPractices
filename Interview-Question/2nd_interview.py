@@ -544,3 +544,70 @@ Think of modules as books 📖 and packages as a library 📚.
 A module (math.py) is one book with formulas.
 A package (numpy) is a library with multiple books (modules) on mathematics.
 '''
+
+# Q41) what is the difference between NumPy and SciPy ?
+'''
+Feature                          NumPy 🟢	                                            SciPy 🔵
+--------            -----------------------------                           ---------------------------
+Purpose	    Provides basic numerical operations,including        Built on top of NumPy, providing advanced mathematical 
+            arrays,matrices, and basic math functions.	         functions like optimization, integration, and statistics.
+
+Focus	    Core numerical computations 	                     Scientific computations (signal processing, 
+            (arrays, linear algebra, random numbers, etc.).      optimization, and special functions).
+
+Speed	    Highly optimized for performance, 	                 Uses NumPy internally but extends functionality 
+            especially with large arrays.                        with extra scientific tools.
+              
+Modules	    Mainly provides ndarray (multi-dimensional 	         Has multiple sub-modules like scipy.linalg, 
+            arrays) and basic operations.                        scipy.optimize, scipy.stats, etc.
+
+Usage	    Used when you need fast and efficient 	             Used for advanced scientific computations 
+            numerical calculations.                              and applied mathematics.
+
+
+------------------------- key functionality difference ------------------------
+
+Operation	                                 NumPy	                                             SciPy
+------------------                       -----------------                                ---------------------
+Array Handling	                        ✅ Yes (numpy.array)	                         ✅ Yes (built on NumPy)
+Linear Algebra	                        Basic (numpy.linalg)	                       Advanced (scipy.linalg)
+Statistics	                            Basic (numpy.mean(), numpy.std())	           Advanced (scipy.stats)
+Optimization	                        ❌ No	                                     ✅ Yes (scipy.optimize)
+Signal Processing	                    ❌ No	                                     ✅ Yes (scipy.signal)
+Integration & Differential Equations	❌ No	                                     ✅ Yes (scipy.integrate)
+'''
+
+
+# Q42) len() --> len() function is used to find the length of string, list, array, and so on.
+
+# Q43) define encapsulation in python ?
+'''
+encapsulation is the "Wrapping of data and method to single unit" (usually a class) is called encapsulation
+
+this means that the related data and the functions that operate on that data are bundled
+together, allowing control access and hiding internal details form outside reference.
+'''
+
+# Q44) type() --> returns the data type of the object (variable used)
+# Q45) split()--> it is used to split the string into list using defind seperator. (default seperator is white space).
+
+# Q46) what is docstring ?
+'''
+doc string are the string literal that appear right after the defination of the function, method, class or module.
+
+they are used to document our code.
+it is enclosed with triple quote.(""" """ or ''' ''').
+we can access it using doc attribute (__doc__).
+'''
+
+# Q47) what is the use of lambda function in python?
+'''
+lambda function is used to create a anonymous function (functoin without name). it is
+a linile function that does not contain any return statement.
+
+it is mainly used for short period.
+
+example:- 
+multiply=lambda a,b: a*b
+print(multiply(4,5))
+'''
