@@ -603,11 +603,53 @@ we can access it using doc attribute (__doc__).
 # Q47) what is the use of lambda function in python?
 '''
 lambda function is used to create a anonymous function (functoin without name). it is
-a linile function that does not contain any return statement.
+a inline function that does not contain any return statement.
 
 it is mainly used for short period.
 
 example:- 
 multiply=lambda a,b: a*b
 print(multiply(4,5))
+'''
+
+# Q48) find the factorial of a number using recursion ?
+'''
+def recursion(n):
+    if n==1:
+        return 1
+    else:
+        res=n*recursion(n-1)
+    return res
+
+
+number=int(input("enter the number of your choice : "))
+result=recursion(number)
+print(result)
+'''
+
+# Q49) can you denote the working of the bool() function with an example?
+'''
+the bool() function in python returns true or false.
+when it will return true and when it will return false:
+
+false:- it will return false when it sees (NaN, null, 0, []--> empty)
+
+example:- 
+
+a="hello"
+b=15
+c=0
+sample_list=[]
+
+print(bool(a))
+print(bool(b))
+print(bool(c))
+print(bool(sample_list))
+
+
+---------------output----------------
+true
+true
+false
+false
 '''
