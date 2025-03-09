@@ -646,7 +646,6 @@ print(bool(b))
 print(bool(c))
 print(bool(sample_list))
 
-
 ---------------output----------------
 true
 true
