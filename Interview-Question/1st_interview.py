@@ -6,7 +6,6 @@
 
         I completed my intermediate education at DAV Public School, Bokaro, and recently graduated 
         from Vinoba Bhave University, Hazaribagh, with an overall CGPA of 7.5.
-
         During my studies, I acquired(learned) various technical skills, including C, C++, Java, Python, HTML, 
         CSS, Node.js, Express.js, and database technologies like MongoDB and MySQL. These skills enabled
         me to successfully develop my final year project, Car Rental System, a full-stack web 
