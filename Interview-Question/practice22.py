@@ -11,3 +11,7 @@ for i in []:
     print(i)
 else:
     print("no i")
+
+# working with lambda function
+
+val=lambda(a*a*a)

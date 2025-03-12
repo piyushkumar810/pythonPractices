@@ -9,7 +9,7 @@ print(a)
 
 # eg --> using lambda function
 a1=lambda x1,y1:x1+y1
-print(a1)
+print(a1(20,30))
 
 # eg3 -->passing function as an argument
 def cube(c):
