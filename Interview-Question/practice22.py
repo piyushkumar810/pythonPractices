@@ -12,6 +12,9 @@ for i in []:
 else:
     print("no i")
 
-# working with lambda function
+print()
 
-val=lambda(a*a*a)
+
+# working with lambda function
+val=lambda x:x*x*x
+print(val(3))
