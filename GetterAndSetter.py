@@ -11,7 +11,7 @@ a=myclass(10)
 print(a.value)
 
 # setter --> it is important to note that getter do not take any parameter and we cannot set value through getter 
-#             for that we need setter which can be added by  decorater method with @property_name.setter
+#             for that we need setter which can be added by decorater method with @property_name.setter
 
 class Myclass:
     def __init__(self,values):
