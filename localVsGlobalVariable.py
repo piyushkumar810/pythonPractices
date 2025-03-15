@@ -24,6 +24,5 @@ print(a)
 def gobal():
     global a
     print(a)
-
 gobal()
 print(a)
