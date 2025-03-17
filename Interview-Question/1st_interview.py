@@ -4,8 +4,8 @@
 ''' ans--> Good afternoon, sir/ma'am. My name is Piyush Kumar.
         In my family, apart from my parents, I have one elder brother and one elder sister.
 
-        I completed my intermediate education at DAV Public School, Bokaro, and recently graduated 
-        from Vinoba Bhave University, Hazaribagh, with an overall CGPA of 7.5.
+        I completed my intermediate education at DAV Public School, Bokaro, and graduated 
+        from Vinoba Bhave University, Hazaribagh in 2024, with an overall CGPA of 7.5.
         During my studies, I acquired(learned) various technical skills, including C, C++, Java, Python, HTML, 
         CSS, Node.js, Express.js, and database technologies like MongoDB and MySQL. These skills enabled
         me to successfully develop my final year project, Car Rental System, a full-stack web 
@@ -14,6 +14,11 @@
         With these skills and project experience, I secured a position at Bulwark Software Private
         Limited. While working on projects, I also discovered and honed additional skills such as
         problem-solving, time management, teamwork, and adaptability.'''
+# q) what about your gap year?
+''' ans-> honestly i didn't want to take a gap, i had applied late for PES university and due to no vacant seat  
+          i couldint secure addemission. however i utilized my time in learning python and its libraries along with
+          DSA which hepled me to strengthen my coding skills.
+     '''
 
 # Q2) you have any achievements in your carrier ?
 '''ans-> My Achievements:
