@@ -45,7 +45,7 @@
 
 
 # Q5) what are literals in python?
-''' ans -> literals in python refers to the data that is given in a vriable or constant.
+''' ans -> literals in python refers to the data that is given in a variable or constant.
 
            there are four types of literals in python: 
            
