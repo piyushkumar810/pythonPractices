@@ -164,8 +164,8 @@ result=palindrome(str)
          OOP: Data is encapsulated within objects, and access is restricted through methods 
                (functions within objects).
                
-        POP: it follows top-down approach
-        OOP: it follows bottom-up approach'''
+         POP: it follows top-down approach
+         OOP: it follows bottom-up approach'''
 
 # Q17) what do you mean by top-down approach and bottom-up approach ?
 '''ans-> Top-Down Approach:
