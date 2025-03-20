@@ -243,19 +243,43 @@ ans-> Normalization is the process of organizing a database to reduce redundancy
             📌 BCNF is used when 3NF still has anomalies due to multiple candidate keys.
 '''
 
-# Q) what is difference between normalization and denormalization ?
+# Q12) what is difference between normalization and denormalization ?
 '''
 ans->   Feature	                      Normalization	                               Denormalization
+    --------------       --------------------------------------------      ----------------------------------------
 Definition	          Process of organizing data to eliminate.         Process of combining tables to improve query 
-                       redundancy and improve integrity.	             performance at the cost of redundancy.
+                      redundancy and improve integrity.	               performance at the cost of redundancy.
 
-Purpose	Reduce data redundancy and maintain consistency.	Optimize read performance by reducing joins.
-Data Redundancy	Minimized (less storage used).	Increased (duplicate data).
-Data Integrity	High (reduces anomalies).	Lower (higher risk of inconsistency).
-Number of Tables	More tables (splitting data).	Fewer tables (merging data).
-Joins in Queries	More joins required to fetch data.	Fewer joins required, improving performance.
-Performance	Slower for read queries, but good for inserts, updates, and deletes.	Faster read queries, but insert/update/delete operations are slower.
-Best Used For	Transactional databases (OLTP - Online Transaction Processing).	Analytical databases (OLAP - Online Analytical Processing).
+Purpose	              Reduce data redundancy and maintain consistency. Optimize read performance by reducing joins.
+
+Data Redundancy	      Minimized (less storage used).	                 Increased (duplicate data).
+
+Data Integrity	      High (reduces anomalies).	                       Lower (higher risk of inconsistency).
+
+Number of Tables	    More tables (splitting data).                    Fewer tables (merging data).
+
+Joins in Queries	    More joins required to fetch data.	             Fewer joins required, improving performance.
+
+Performance	         Slower for read queries, but good for             Faster read queries, but 
+                     inserts, updates, and deletes.	                   insert/update/delete operations are slower.
+
+Best Used For	       Transactional databases                           Analytical databases
+                     (OLTP - Online Transaction Processing).	         (OLAP - Online Analytical Processing).
 '''
 
-# Q) what are the different types of key in python ?
+# Q13) Difference Between Relationship and Cardinality
+'''
+ans->    Feature	                     Relationship	                                   Cardinality
+    -------------------      -----------------------------------------    -------------------------------------
+        Definition	     Represents how two entities are associated.	     Defines the number of entities involved 
+                                                                           in a relationship.
+
+        Focus	       Qualitative (describes "what" the relationship is).   Quantitative (describes "how many").
+
+        Representation 	  Diamond shape (e.g., "Enrolls In").              Numbers on edges (e.g., 1:1, 1:M, M:N).
+        in ER Diagram
+
+        Example	         A Student "Enrolls In" a Course.	                "One student can enroll in many courses (1:M)".
+
+'''
+# Q) what are the different types of key in DBMS ?
