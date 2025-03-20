@@ -163,5 +163,99 @@ ans-> In a Database Management System (DBMS), abstraction helps in hiding comple
 
 # Q8) what is entity-relationship model(ER-model)?
 '''
-ans-> 
+ans-> An ER Model (Entity-Relationship Model) is a high-level conceptual data model used for database design. 
+      It represents real-world entities and their relationships in a structured way, making it easier to design
+      a database before implementing it.
+
+    Key Components of ER Model:
+            Entities: Objects or things in the real world that have distinct identities (e.g., Student, Car, Employee).
+                 Strong Entities: Exist independently (e.g., Student).
+                 Weak Entities: Depend on a strong entity (e.g., Dependent in an insurance system).
+
+            Attributes: Characteristics or properties of an entity (e.g., Student has Name, Age, Roll Number).
+                 Simple Attribute: Cannot be broken down (e.g., Age).
+                 Composite Attribute: Can be divided (e.g., Name → First Name + Last Name).
+                 Derived Attribute: Computed from other attributes (e.g., Age from Date of Birth).
+                 Multivalued Attribute: Can have multiple values (e.g., Phone Numbers).
+
+            Relationships: Associations between entities.
+                 One-to-One (1:1): Each entity is related to at most one other entity (e.g., Person ↔ Passport).
+                 One-to-Many (1:M): One entity is related to many others (e.g., Teacher ↔ Students).
+                 Many-to-Many (M:N): Many entities are related to many others (e.g., Students ↔ Courses).
+
+            Keys:
+                 Primary Key: Unique identifier for an entity (e.g., Student ID).
+                 Foreign Key: Attribute in one table that references a primary key in another table.
+
+            ER Diagram (ERD):An ER Model is visually represented using an ER Diagram, where:
+                   Rectangles represent entities.
+                   Ellipses represent attributes.
+                   Diamonds represent relationships.
+                   Lines connect entities to their attributes and relationships.
 '''
+
+# Q9) what are concurrency control ?
+'''
+ans-> Concurrency control refers to the techniques used in databases to manage multiple transactions executing 
+      simultaneously while ensuring data consistency and preventing conflicts.
+
+      Main Goals of Concurrency Control:
+          Consistency: Ensuring that the database remains in a valid state despite concurrent transactions.
+          Isolation:   one transaction is not interfaing other transaction.
+          Deadlock Prevention: Avoiding situations where two or more transactions are waiting for each other 
+                              to release resources, causing a standstill.
+'''
+
+# Q10) what are ACID property in DBMS ?
+'''
+ans-> ACID properties ensure the reliability and integrity of database transactions. They stand for:
+
+          Property	              Description	                                             Example
+    ----------------  --------------------------------------                   ----------------------------      
+    Atomicity	     Transactions are fully completed or rolled back.      	  Money transfer: If one step fails, rollback.
+    Consistency	   Database remains valid before and after a transaction.	  No negative bank balance allowed.
+    Isolation	     ensures transaction will not interfaing other transaction.    Prevents double withdrawals.
+    Durability	   Committed changes are permanent.	                        Flight booking stays even after a crash.
+'''
+
+# Q11) what is normalization and what are the types of normalization ?
+'''
+ans-> Normalization is the process of organizing a database to reduce redundancy and improve data integrity
+
+      Types of Normalization (Normal Forms)
+
+      1. First Normal Form (1NF) – Eliminate Repeating Groups
+            ✅ Each column contains atomic values (indivisible).
+            ✅ Each row has a unique identifier (Primary Key)
+      
+      2. Second Normal Form (2NF) – Remove Partial Dependency
+            ✅ It is in 1NF.
+            ✅ No Partial Dependency (Every non-key column is fully dependent on the entire primary key).
+
+      3. Third Normal Form (3NF) – Remove Transitive Dependency
+            A table is in 3NF if: ✅ It is in 2NF.
+            ✅ No Transitive Dependency (Non-key attributes do not depend on other non-key attributes).
+
+      4. Boyce-Codd Normal Form (BCNF) – Stronger 3NF
+            A table is in BCNF if: ✅ It is in 3NF.
+            ✅ For every functional dependency (X → Y), X should be a super key.
+
+            📌 BCNF is used when 3NF still has anomalies due to multiple candidate keys.
+'''
+
+# Q) what is difference between normalization and denormalization ?
+'''
+ans->   Feature	                      Normalization	                               Denormalization
+Definition	          Process of organizing data to eliminate.         Process of combining tables to improve query 
+                       redundancy and improve integrity.	             performance at the cost of redundancy.
+
+Purpose	Reduce data redundancy and maintain consistency.	Optimize read performance by reducing joins.
+Data Redundancy	Minimized (less storage used).	Increased (duplicate data).
+Data Integrity	High (reduces anomalies).	Lower (higher risk of inconsistency).
+Number of Tables	More tables (splitting data).	Fewer tables (merging data).
+Joins in Queries	More joins required to fetch data.	Fewer joins required, improving performance.
+Performance	Slower for read queries, but good for inserts, updates, and deletes.	Faster read queries, but insert/update/delete operations are slower.
+Best Used For	Transactional databases (OLTP - Online Transaction Processing).	Analytical databases (OLAP - Online Analytical Processing).
+'''
+
+# Q) what are the different types of key in python ?
