@@ -184,7 +184,6 @@ result=palindrome(str)
           from another class (parent class). This helps in reusing code and 
           extending functionality.'''
 
-
 # Q19) what is mro ?
 '''ans -> The MRO determines the order in which methods are looked up in the class
           hierarchy when calling a method or accessing a property.'''
