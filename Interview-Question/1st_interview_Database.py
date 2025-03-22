@@ -5,7 +5,7 @@
 ans ->              DBMS                                                    RDBMS
        -------------------------------------             --------------------------------------------
     -> DBMS is a software which is used to               where as RDBMS is a subset of DBMS where data is  
-       interact with user,application and                stored in a form of tables (rows and columns).
+       interact with user, application and               stored in a form of tables (rows and columns).
        databasse itself to store, retrieve
        and manage data efficently.   
     -> stored in a form of herarchical, 
@@ -283,3 +283,19 @@ ans->    Feature	                     Relationship	                             
 
 '''
 # Q) what are the different types of key in DBMS ?
+
+
+# Q) what is an index ?
+'''
+ans-> An index in a database is a data structure that improves the speed of data retrieval operations on a table. eg:- in dsa
+      from this data [1,3,4,7,3,5,2,9,7,4,3,0] you want to access 0 with linear search the T.C will be O(n). but if the data
+      will be sorted then using binary search you can fetch same data fastely T.C O(log n), similarly indexing does same in database.
+
+      types of index :-
+      ------------------
+      1) unique index --> A Unique Index is a type of database index that ensures all values in the indexed column(s) 
+                            are distinct (no duplicate values).
+
+      2) Clustered Index --> 
+      3) Non-Clustered Index
+'''
