@@ -47,6 +47,7 @@
 # Q5) what is the use of decision making statements ?
 '''ans-> decision making statements are used to make decisions based to some conditions '''
 
+
 # Q6) can you differentate all the decisions making statements ?
 '''ans-> there are 4 types of decision making statements in pyhton :-
         1st - if statement
