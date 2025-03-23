@@ -285,7 +285,7 @@ ans->    Feature	                     Relationship	                             
 # Q) what are the different types of key in DBMS ?
 
 
-# Q) what is an index ?
+# Q14) what is an index ?
 '''
 ans-> An index in a database is a data structure that improves the speed of data retrieval operations on a table. eg:- in dsa
       from this data [1,3,4,7,3,5,2,9,7,4,3,0] you want to access 0 with linear search the T.C will be O(n). but if the data
@@ -296,6 +296,36 @@ ans-> An index in a database is a data structure that improves the speed of data
       1) unique index --> A Unique Index is a type of database index that ensures all values in the indexed column(s) 
                             are distinct (no duplicate values).
 
-      2) Clustered Index --> 
-      3) Non-Clustered Index
+      2) Clustered Index --> Sorts and stores the data rows in the table based on the index key (only one per table).
+
+      3) Non-Clustered Index-->Creates a separate structure for quick lookups without changing the data storage order.
+'''
+
+# Q15) what is ACID property ?
+'''
+ans--> 
+        1. Atomicity ("All or Nothing")
+            A transaction is all-or-nothing.
+            If any part of the transaction fails, the entire transaction is rolled back.
+
+          Example: Transferring money between bank accounts should either complete fully or not happen at all.
+
+        2. Consistency ("Valid State")
+            A transaction must bring the database from one valid state to another.
+            It must maintain rules and constraints (like unique keys, foreign keys, etc.).
+
+          Example: If a bank transfer deducts money from one account, it must be added to another to maintain 
+                    balance consistency.
+
+        3. Isolation ("No Interference")
+            Transactions are executed independently without affecting each other.
+            Prevents issues like dirty reads, non-repeatable reads, and phantom reads.
+
+          Example: If two users try to book the last train ticket at the same time, only one should succeed.
+
+        4. Durability ("Permanent Changes")
+            Once a transaction is committed, it is permanently stored.
+            Even in case of a system crash, the changes should persist (using logs, backups, etc.).
+
+          Example: After a successful order payment, even if the system crashes, the order should not disappear.
 '''
