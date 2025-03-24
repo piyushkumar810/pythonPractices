@@ -94,7 +94,7 @@ ans-> No null value is not at all same as blank space or zero. here are the diff
         Value	                   Meaning	                                      Example
     ---------------           ---------------------------                ------------------------------    
      NULL	                   Unknown / Missing value	           NULL in SQL means no value has been assigned.
-     Blank Space (' ')	       A valid but empty string	           ' ' (a space) is considered as a string with no characters.
+     Blank Space (' ')	     A valid but empty string	           ' ' (a space) is considered as a string with no characters.
      Zero (0)	               A numerical value	               0 is an actual number and is not NULL.
 '''
 
