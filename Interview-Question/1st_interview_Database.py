@@ -329,3 +329,82 @@ ans-->
 
           Example: After a successful order payment, even if the system crashes, the order should not disappear.
 '''
+
+# Q16) what do you mean by trigger in sql ?
+'''
+trigger is a special type of sql code which gives you the facility to automatically execute before and after the 
+event(insert, update and delete) occure on the table.
+
+triggers are used with these only:- 
+
+--> before insert, after insert
+--> before delete, after delete
+--> before update, after update
+
+eg:- sending welcome email to all new employees to our company.
+
+syntax:-
+
+CREATE TABLE IF NOT EXISTS employee (
+    empId INT PRIMARY KEY,
+    empName VARCHAR(50),
+    empAge INT,
+    empDept VARCHAR(50)
+);
+
+INSERT INTO employee(empId, empName, empAge, empDept) 
+VALUES (101, 'rahul', 23, 'operator');
+
+INSERT INTO employee(empId, empName, empAge, empDept) 
+VALUES (102, 'rohan', 25, 'operator');
+
+INSERT INTO employee(empId, empName, empAge, empDept) 
+VALUES (103, 'sumit', 20, 'developer');
+
+INSERT INTO employee(empId, empName, empAge, empDept) 
+VALUES (104, 'piyush', 21, 'developer');
+
+INSERT INTO employee(empId, empName, empAge, empDept) 
+VALUES (105, 'suraj', 29, 'ceo');
+
+select * from employee;
+
+-- Step 1: Create the Trigger
+DELIMITER $$
+
+CREATE TRIGGER sample_trigger
+BEFORE INSERT
+ON employee
+FOR EACH ROW
+BEGIN
+    SET NEW.empAge = NEW.empAge + 4;
+END $$
+
+DELIMITER ;
+
+-- Step 2: Insert test data
+INSERT INTO employee(empId, empName, empAge, empDept) 
+VALUES (106, 'rajesh', 23, 'operator');
+
+-- Step 3: Check if the trigger worked
+SELECT * FROM employee;
+
+
+note:- 
+Understanding DELIMITER $$ in MySQL
+🔹 What is DELIMITER in MySQL?
+DELIMITER is a MySQL command used to change the statement terminator from the default semicolon (;) to something else (like $$).
+
+This is necessary when writing stored procedures, triggers, or functions, which contain multiple SQL statements.
+'''
+
+# Q17) operators avilable in sql ?
+'''
+there are mainly 5 types of operator avilable in sql
+
+1) arithmatic operator
+2) logical operator
+3) bitwise operator
+4) comparision operator
+5) compound operator
+'''
