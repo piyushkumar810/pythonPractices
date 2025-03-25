@@ -1,26 +1,26 @@
 # what are  bi tools
 ''' BI (Business Intelligence) tools are software applications that help businesses collect, analyze, and
-    visualize data to make informed decisions. These tools enable users to extract insights from raw data and 
-    present them in the form of reports, dashboards, and charts.
+    visualize data to make informed decisions. These tools enable users to present raw data 
+    in the form of reports, dashboards, and charts.
 '''
 
 # Common BI Tools:
 '''
-# Power BI – Microsoft’s BI tool for interactive visualizations.
+# Power BI -> Microsoft's BI tool for interactive visualizations.(Visualization is the process of forming a mental image or representing data, ideas, or concepts visually. It helps in better understanding and analysis.)
 
-# Tableau – A powerful data visualization tool.
+# Tableau -> A powerful data visualization tool.
 
-# Looker – A cloud-based BI platform by Google.
+# Looker -> A cloud-based BI platform by Google.
 
-# Qlik Sense – A data discovery and visualization tool.
+# Qlik Sense -> A data discovery and visualization tool.
 
-# SAP BusinessObjects – Enterprise BI for reporting and analytics.
+# SAP BusinessObjects -> Enterprise BI for reporting and analytics.
 
-# IBM Cognos Analytics – AI-powered business analytics.
+# IBM Cognos Analytics -> AI-powered business analytics.
 
-# Domo – A cloud-based BI and data integration platform.
+# Domo -> A cloud-based BI and data integration platform.
 
-# Sisense – Focused on embedded analytics.'
+# Sisense -> Focused on embedded analytics.'
 '''
 
 # Key Features of BI Tools:
