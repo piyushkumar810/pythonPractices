@@ -4,7 +4,7 @@
 
 # ----------------what does mro() do
 # ans --> it is used to get the order in which the method and attribute are to be inhertied from hierarchie
-# of the classes(thos problem specially arrise in case of multiple inheritance)
+#          of the classes(thos problem specially arrise in case of multiple inheritance)
 
 # eg
 
