@@ -401,7 +401,6 @@ This is necessary when writing stored procedures, triggers, or functions, which 
 # Q17) operators avilable in sql ?
 '''
 there are mainly 5 types of operator avilable in sql
-
 1) arithmatic operator
 2) logical operator
 3) bitwise operator
