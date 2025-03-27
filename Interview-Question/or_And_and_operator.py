@@ -11,7 +11,6 @@ y = 10
 if x > 0 and y > 0:
     print("Both x and y are positive")
 
-
 # ------------------------------------or Operator:
 
 # Returns True if at least one of the conditions is True.
@@ -23,7 +22,6 @@ y = 10
 if x > 0 or y > 0:
     print("At least one of x or y is positive")
 print("\n")
-
 
 
 # ------------------but----------but------------------but-------------
