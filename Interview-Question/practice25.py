@@ -10,3 +10,19 @@ def fact(n):
 num=int(input("enter a number "))
 factorial=fact(num)
 print(factorial)
+print()
+
+# fibonacci series
+def fibonacci(n):
+    if n<=0:
+        return "input should be positive integer"
+    elif n==1:
+        return 0
+    elif n==2:
+        return 1
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+    
+fabio=int(input("enter a number "))
+for i in range(1,fabio+1):
+    print(fibonacci(i), end=" ")
