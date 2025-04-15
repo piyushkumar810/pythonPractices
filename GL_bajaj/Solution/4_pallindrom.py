@@ -1,3 +1,5 @@
+# pallindrome check
+
 num = int(input("Enter a number: "))
 original = num
 reverse = 0
