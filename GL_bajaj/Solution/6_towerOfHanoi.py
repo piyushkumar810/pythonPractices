@@ -14,7 +14,6 @@ Only one disk can be moved at a time.
 Each move involves taking the top disk from one of the stacks and placing it on top of another stack.
 No larger disk may be placed on top of a smaller disk.
 
-
 '''
 
 def tower_of_hanoi(n, source, destination, auxiliary):
@@ -24,6 +23,6 @@ def tower_of_hanoi(n, source, destination, auxiliary):
     tower_of_hanoi(n - 1, source, auxiliary, destination)
     print(f"Move disk {n} from {source} to {destination}")
     tower_of_hanoi(n - 1, auxiliary, destination, source)
-    
+
 n = 3  # Number of disks
 tower_of_hanoi(n, 'A', 'C', 'B')
