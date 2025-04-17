@@ -23,5 +23,6 @@ def permute(s, answer=""):
         right = s[i+1:]
         rest = left + right
         permute(rest, answer + ch)
-        
-permute("abc")
+
+str=input("enter the string you want : ")
+permute(str)
