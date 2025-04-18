@@ -65,8 +65,6 @@ Avoid unnecessary details; focus on relevant skills and achievements.
 Keep the resume one page (for freshers) or two pages max (for experienced professionals).
 '''
 
-
-
 # -------------------------------Types of skill
 '''
 Skill Types:
