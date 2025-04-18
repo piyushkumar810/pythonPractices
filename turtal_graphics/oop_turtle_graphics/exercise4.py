@@ -27,5 +27,4 @@ while True:
 
 t1.end_fill()
 
-
 s1.exitonclick()
