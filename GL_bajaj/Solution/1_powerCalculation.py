@@ -34,7 +34,6 @@ exponent = int(input("Enter the power value: "))
 result = powerCal(base, exponent)
 print(result)
 
-
 # -----------------------------------easy way to handle all the cases
 import math
 
