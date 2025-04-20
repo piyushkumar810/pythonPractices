@@ -31,10 +31,14 @@ permute(str)
 
 # ---------for better understanding (slicing starts from index 0 and ends at index i-1.)
 
-
+# 1st concept
 # str1="length"
 # for i in range (len(str1)):
 #     print("this is 1st  ",str1[:i])
 #     print("this is 2nd  ",str1[i+1:])
 #     print("combined = ", str1[:i]+str1[i+1:])
 #     print()
+
+# 2nd concept
+# srt=""
+# print(len(srt))
