@@ -1,5 +1,4 @@
 # ----------------------------reverse an array
-
 from array import *
 
 arr=array('I', [2,5,7,6,9])
