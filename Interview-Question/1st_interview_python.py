@@ -188,3 +188,7 @@ result=palindrome(str)
 # Q19) what is mro ?
 '''ans -> The MRO determines the order in which methods are looked up in the class
           hierarchy when calling a method or accessing a property.'''
+
+# Q20) what is suite in python ?
+'''ans-> 
+'''
