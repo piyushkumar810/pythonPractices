@@ -192,3 +192,13 @@ result=palindrome(str)
 # Q20) what is suite in python ?
 '''ans-> 
 '''
+
+# Q21) what do you preffer when time complexity is same to solve a problem looping or ruccersion
+'''ans-> When the time complexity is the same, I generally prefer looping (iteration) over recursion in most cases.
+
+Reason	                               Explanation
+Lower memory usage	      Loops use constant memory, while recursion uses stack frames (can cause stack overflow).
+Better performance	      Function calls in recursion have overhead (saving stack state, return address).
+More readable/debuggable      Loops are often easier to follow and debug, especially for simple tasks.
+Avoids stack overflow	      Deep recursion can crash the program if it exceeds stack size.
+'''
