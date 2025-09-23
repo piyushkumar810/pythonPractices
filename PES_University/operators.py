@@ -91,3 +91,57 @@ print(type(str(y2)))
 # string to a float
 z1="3.14"
 print(float(z1))
+
+# ------------------------question 1 (predict the output)
+n11="one"
+n22=23
+
+print(type(n11))         #string
+# explicut type casting
+# n11=int(n11)              cannot convert
+# print(type(n11))
+
+# sum1=n11+n22    #can only concatenate str (not "int") to str
+# print(sum)
+# print(type(sum))
+
+# ----------------------------- Python indentation
+print()
+number = 5
+
+if number > 0:
+    print("Number is positive")
+    for i in range(number):
+        print(f"Counting: {i+1}")
+print("This line is outside the if block")
+
+# ------------------------ working wiith input() function
+print()
+x4=input("enter the value you want")
+print(x4)
+print(type(x4))
+
+# --------------------- formatted output
+print(f"section : %c, temp : %5.2f %{(1,05.333)}")
+
+# string formatting using format()
+print()
+name1="harry"
+age=22
+print("Name : {}, Age: {}".format(name1,age))
+
+# positional formatting
+print("First: {0}, Second: {1}, Again First: {0}".format("A","B"))
+
+# keyword formatting
+print("Name: {n}, Age:{a}".format(n="harry", a=22))
+
+# advanced fprmatting
+pi = 3.14159
+print("pi : {:.2f}".format(pi))  
+# print("Number: {:.5d}".format(42))  # Corrected spelling of "Number"
+print("Left align: {:.<5d}".format(42))  # Correct: Left-aligns with dots
+
+# ------------------------------------------ headers and Blocks
+# header--> header is a keyword flowed by 
+# A clauses= header + suits
