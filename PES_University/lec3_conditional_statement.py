@@ -34,8 +34,8 @@
 
 
 
-print()
-print("--- 2. if-else statement---")
+# print()
+# print("--- 2. if-else statement---")
 
 # print()
 # print("--- 3. elif statement---")
@@ -98,22 +98,45 @@ print("--- 2. if-else statement---")
 #     print(i)
 
 # q4. sum of numbers until the sum exceeds 150.
-total = 0
-num = 1
-
-while total <= 150:
-    total += num
-    num += 1
-
-print("The sum exceeded 150. Final sum:", total)
-print("Last number added:", num - 1)
+# total = 0
+# num = 1
+# while total <= 150:
+#     total += num
+#     num += 1
+# print("The sum exceeded 150. Final sum:", total)
+# print("Last number added:", num - 1)
 
 
 # q5. WAP to display whetehr the given no is a prime no or not.
-
+# num_one=int(input("enter the number :"))
+# counter=2
+# flag=0
+# while counter <=(num_one/2):
+#     if(num_one%counter==0):
+#         flag=1
+#         break
+#     counter+=1
+# if(flag==0):
+#     print(f"{num_one} is a prime number")
+# else:
+#     print(f"{num_one} is not a prime number")
 
 # q6. give a list of 20 number[] display the numbers if they are even if they are odd skip it.
+list1=[1,2,2,1,4,6,7,8,10,2,10]
+for list in list1:
+    if(list%2==0):
+        print(list)
+    else:
+        continue
+print()
 
 # q7. read a name and diplay the name character by character.
+name="piyush kumar"
+for nam in name:
+    print(nam)
+print()
 
-# q8. given a number display all the prime numbers theat are between 1 and 10
+# q8. given a number display all the prime numbers that are between 1 and 10
+# counter1=0
+# while counter1<=10:
+#     if(counter1%)
