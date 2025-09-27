@@ -60,16 +60,16 @@
 # for i in range(0,10,-1):
 #     print(i)
 
-# for i in range(10,0,1):
+# for i in range(10,0,1):   # it will run and the output is (nothing) , but it will not give any error
 #     print(i)
 
-# for i in range(10,2):
+# for i in range(10,2):     # When step is not given, default = +1. output will again nothing
 #     print(i)
 
 # for i in range(5,15):
 #     print(i)
 
-# for i in range( ,10,2):
+# for i in range( ,10,2):    #This is a syntax error because you left the first parameter blank.
 #     print(i)
 
 # for loop also allows me to use else statement inside the for loop
@@ -137,6 +137,10 @@ for nam in name:
 print()
 
 # q8. given a number display all the prime numbers that are between 1 and 10
-# counter1=0
-# while counter1<=10:
-#     if(counter1%)
+for num in range(1,11):
+    if(num>1):
+        for i in range(2,num):
+            if(num%i==0):
+                break
+        else:
+            print(num)
