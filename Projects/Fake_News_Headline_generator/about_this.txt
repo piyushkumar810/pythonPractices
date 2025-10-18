@@ -1,0 +1,27 @@
+---------------------------------- Fake News Heading Generator ----------------------------------
+
+--> what to build ?
+a fake news which will be very funny.  eg-"salman khan is riding a buffalo near india gate"
+i am going to do this by list of words.
+
+--> how ?
+how it is going to work, see i am going to take three list 
+1- subject
+2- action
+3- places/objects
+
+eg:- salman khan (subject)
+     india gate  (place)
+     riding a buffal (action/ doing something)
+
+i am going to pick one-one word from each list and combine them to form a fake and funny sentence.
+and also i am going to ask from user that if you want to generate more news type yes otherwise no.
+
+--> concept i am going to use ?
+✔️ concept of lists
+✔️ use of random module
+✔️ input()
+✔️ string concatanation
+✔️ use of loops
+
+--> steps involved in this program
