@@ -29,6 +29,11 @@ def clear_history():
     file=open(History_file,"w")
     file.close()
     print('History cleared. ')
+'''
+-> Opening a file in "w" (write) mode automatically erases all existing data in that file.
+-> If the file doesn't exist, it will be created empty.
+-> You don't even need to write anything — just opening and closing it is enough to make it blank.
+'''
 
 def save_to_history(equation, result):
     file=open(History_file,"a")

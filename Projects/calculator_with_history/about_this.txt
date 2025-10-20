@@ -22,7 +22,7 @@ it will also stores history like what previous expression is entered by the user
 1. start the program 
 2. create one file (history.txt) to store history
 3. start while loop:
-    a. ask the user to enter a calculation (eg: - 8+5)
+    a. ask the user to enter a calculation (eg: - "8+5")
         or a command (history, clear, exit) 
    
     b. if user enter exit:
