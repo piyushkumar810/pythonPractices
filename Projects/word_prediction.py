@@ -3,7 +3,7 @@
 
 1. start the program
 2. show welcome messages and the rules of the game.
-3.let user choose a difficulty level
+3. let user choose a difficulty level
     a. based on level, set a list of possible secret words.
 
 4. randomly select a secret word form the chosen list.
@@ -21,6 +21,6 @@
         ii. break loop
 
     d. else:
-         i. compair each letter in the guss to the secret word
-         ii. count how many letters are correct and the correct place
+        i. compair each letter in the guss to the secret word.
+        ii. count how many letters are correct and the correct place
 '''
