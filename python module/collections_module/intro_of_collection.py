@@ -23,6 +23,10 @@ UserString
 # 1. namedtuple()
 '''
 it returns a tuple with a named value for each element in the tuple.
+-> it takes two Arguments:
+
+'1st argument' → name of the tuple type (like a class name)
+['x', 'y'] → list or space-separated string of field names
 '''
 
 from collections import namedtuple
@@ -122,5 +126,57 @@ userDict- wraps around dictionary object for easier dictionary  sub-class.
 userList- this class acts like wrapper around the list objects for easier list sub-classing.
 userstring- this also acts like wrapper around the string objects for easier string sub-classing.
 '''
-print()
 
+from collections import UserList, UserDict, UserString
+
+# -------------------------
+# 1️⃣ UserList Example
+# -------------------------
+class PositiveList(UserList):
+    """A list that only allows positive numbers."""
+    def append(self, item):
+        if item > 0:
+            super().append(item)
+        else:
+            print(f"Ignored negative number: {item}")
+
+# Using PositiveList
+plist = PositiveList([10, 20, -5, 30])
+plist.append(50)
+plist.append(-10)
+print("UserList Example:", plist)
+
+
+
+# -------------------------
+# 2️⃣ UserDict Example
+# -------------------------
+class StringKeyDict(UserDict):
+    """A dictionary that allows only string keys."""
+    def __setitem__(self, key, value):
+        if not isinstance(key, str):
+            raise TypeError("Only string keys are allowed!")
+        super().__setitem__(key, value)
+
+# Using StringKeyDict
+sdict = StringKeyDict()
+sdict["name"] = "Piyush"
+sdict["city"] = "Bangalore"
+# sdict[123] = "Invalid"   # This will raise an error
+print("UserDict Example:", sdict)
+
+
+
+# -------------------------
+# 3️⃣ UserString Example
+# -------------------------
+class CustomString(UserString):
+    """A string that can easily reverse itself."""
+    def reverse(self):
+        return self.data[::-1]
+
+# Using CustomString
+s = CustomString("Hello World")
+print("UserString Example:")
+print("Original:", s)
+print("Reversed:", s.reverse())
