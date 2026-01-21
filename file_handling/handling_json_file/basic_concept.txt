@@ -1,0 +1,16 @@
+🧠 HOW TO THINK IN EXAM (VERY IMPORTANT)
+
+When you see:
+“Given JSON data, perform operations”
+
+Immediately think in patterns:
+
+Operation Type	             What to Think
+-----------------------------------------------
+Fetch	                    open → load → print
+Filter	                    if condition
+Count	                    len()
+Search	                    for loop + if
+Update	                    change value
+Sort	                    sorted()
+Save	                    dump()
