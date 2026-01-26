@@ -85,7 +85,7 @@ with open(r"C:\Users\piyush kumar\OneDrive\Desktop\GitHub\pythonPractices\file_h
 
 
 
-# Q6️⃣ Save updated data into a new JSON file
+# Q6️⃣ Save updated data into a new JSON file the incremented mark 
 import json
 
 with open(r"C:\Users\piyush kumar\OneDrive\Desktop\GitHub\pythonPractices\file_handling\handling_json_file\student.json",'r') as std:
@@ -128,3 +128,20 @@ with open(r"C:\Users\piyush kumar\OneDrive\Desktop\GitHub\pythonPractices\file_h
 
 
 # Q8)Find average marks of students whose age is ≥ 20
+import json
+
+file = open(r"C:\Users\piyush kumar\OneDrive\Desktop\GitHub\pythonPractices\file_handling\handling_json_file\student.json", "r")
+students = json.load(file)
+file.close()
+
+total_marks = 0
+count = 0
+
+for student in students:
+    if student["age"] >= 20:
+        total_marks += student["marks"]
+        count += 1
+
+average = total_marks / count
+
+print("Average marks (age ≥ 20):", average)

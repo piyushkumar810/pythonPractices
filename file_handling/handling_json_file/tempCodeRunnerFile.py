@@ -1,15 +1,12 @@
-import json
+import json 
+with open(r"C:\Users\piyush kumar\OneDrive\Desktop\GitHub\pythonPractices\file_handling\handling_json_file\student_dict.json", "r") as data:
+    reader=json.load(data)
 
-with open(r"C:\Users\piyush kumar\OneDrive\Desktop\GitHub\pythonPractices\file_handling\handling_json_file\student.json",'r') as std:
-    reader=json.load(std)
-
-    age_count={}
-    for student in reader:
-        age=student["age"]
-
-        if age in age_count:
-            age_count[age]+=1
-        else:
-            age_count[age]=1
-    for age,count in age_count.items():
-        print(f"{age}->{count} student")
+    filtered_student={}
+    for k,v in reader.items():
+        # print(k,v)
+        if(v["age"]>=20):
+            filtered_student[k]=v
+    
+    with open(r"C:\Users\piyush kumar\OneDrive\Desktop\GitHub\pythonPractices\file_handling\handling_json_file\filtered_students.json", "w") as new_rec:
+        json.dump(filtered_student, new_rec, indent=4)
