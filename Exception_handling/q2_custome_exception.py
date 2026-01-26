@@ -59,4 +59,77 @@ check_age() checks condition
 raise InvalidAgeError → error occurs
 Control jumps to except InvalidAgeError
 Message is printed
-''' 
+'''
+
+
+
+
+# ---------------------------------------- example 2
+# 🧪 Example 2: Marks Validation (Exam-Level)
+# ❌ Rule
+
+# Marks must be between 0 and 100.
+class InvalidMarksError(Exception):
+    pass
+
+def check_marks(marks):
+    if marks < 0 or marks > 100:
+        raise InvalidMarksError("Marks must be between 0 and 100")
+    return marks
+
+try:
+    m = int(input("Enter marks: "))
+    print("Marks entered:", check_marks(m))
+except InvalidMarksError as e:
+    print("Custom Exception:", e)
+except ValueError:
+    print("Invalid input")
+
+
+
+
+
+# --------------------------------------- example 3
+# 🧪 Example 3 (TRICKY): finally still runs
+class LowBalanceError(Exception):
+    pass
+
+def withdraw(balance, amount):
+    try:
+        if amount > balance:
+            raise LowBalanceError("Insufficient balance")
+        print("Withdraw successful")
+    finally:
+        print("Transaction completed")
+
+try:
+    withdraw(1000, 2000)
+except LowBalanceError as e:
+    print(e)
+
+
+'''
+Output:
+Transaction completed
+Insufficient balance
+
+
+🔥 finally runs even with custom exceptions
+
+🚨 EXAM TRAPS (VERY IMPORTANT)
+❌ Wrong
+class MyError:
+    pass
+
+
+❌ Does NOT inherit from Exception
+
+❌ Wrong
+raise "Error"
+
+
+❌ Only exception objects allowed
+
+✅ Correct
+raise MyError("message")
+'''
