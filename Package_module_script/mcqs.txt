@@ -1,0 +1,196 @@
+✅ MCQs: PACKAGES & IMPORTS (WITH ANSWERS)
+1️⃣ A Python package is
+
+A. A single .py file
+B. A function collection
+C. A directory containing modules
+D. A compiled file
+
+✅ Answer: C
+
+2️⃣ A module in Python is
+
+A. A directory
+B. A .py file
+C. A class
+D. A package
+
+✅ Answer: B
+
+3️⃣ What is the purpose of __init__.py?
+
+A. To start the Python interpreter
+B. To compile Python code
+C. To mark a directory as a package
+D. To delete unused modules
+
+✅ Answer: C
+
+4️⃣ When is __init__.py executed?
+
+A. When Python starts
+B. When a function is called
+C. When the package is imported
+D. When the file is edited
+
+✅ Answer: C
+
+5️⃣ Which statement is TRUE about __init__.py?
+
+A. It must contain code
+B. It can be empty
+C. It cannot import modules
+D. It is deprecated
+
+✅ Answer: B
+
+6️⃣ What does the following structure represent?
+utils/
+   __init__.py
+   file_ops.py
+
+
+A. Two scripts
+B. One module
+C. One package with one module
+D. Invalid structure
+
+✅ Answer: C
+
+7️⃣ Which import statement imports the entire module?
+
+A. from math import sqrt
+B. import math
+C. from math import *
+D. import sqrt
+
+✅ Answer: B
+
+8️⃣ Which import imports only specific items?
+
+A. import module
+B. import module.*
+C. from module import name
+D. include module
+
+✅ Answer: C
+
+9️⃣ What does the as keyword do in imports?
+
+A. Deletes a module
+B. Renames a module or object
+C. Executes the module
+D. Compiles the module
+
+✅ Answer: B
+
+🔟 Which of the following is an absolute import?
+
+A. from .add import add
+B. from ..utils import helper
+C. from math_pkg.add import add
+D. import .add
+
+✅ Answer: C
+
+1️⃣1️⃣ Relative imports use which symbol?
+
+A. /
+B. #
+C. .
+D. @
+
+✅ Answer: C
+
+1️⃣2️⃣ What does . represent in relative imports?
+
+A. Root directory
+B. Current package
+C. Parent package
+D. Current file
+
+✅ Answer: B
+
+1️⃣3️⃣ What does .. represent in relative imports?
+
+A. Current module
+B. Root directory
+C. Parent package
+D. Child module
+
+✅ Answer: C
+
+1️⃣4️⃣ Relative imports work
+
+A. In any Python file
+B. Only in scripts
+C. Only inside packages
+D. Only in main files
+
+✅ Answer: C
+
+1️⃣5️⃣ Which import style is recommended in Python?
+
+A. Relative imports everywhere
+B. Absolute imports
+C. Wildcard imports
+D. Circular imports
+
+✅ Answer: B
+
+1️⃣6️⃣ What is the role of __all__ in __init__.py?
+
+A. Deletes unused modules
+B. Controls from package import *
+C. Imports all Python modules
+D. Creates a package
+
+✅ Answer: B
+
+1️⃣7️⃣ What happens if __all__ is defined?
+
+A. Only listed names are imported using *
+B. All modules are deleted
+C. Code runs faster
+D. Package becomes private
+
+✅ Answer: A
+
+1️⃣8️⃣ Which of the following is NOT recommended?
+
+A. Absolute imports
+B. Small modules
+C. from module import *
+D. Clear package structure
+
+✅ Answer: C
+
+1️⃣9️⃣ Which statement is TRUE?
+
+A. A package must be a file
+B. A module can contain classes and functions
+C. __init__.py is optional in exams
+D. Relative imports are preferred
+
+✅ Answer: B
+
+2️⃣0️⃣ Why are packages useful?
+
+A. Increase execution speed
+B. Reduce memory usage
+C. Organize and reuse code
+D. Replace databases
+
+✅ Answer: C
+
+🎯 FINAL MCQ MEMORY LOCK 🔒
+
+Remember these 5 golden rules:
+
+1️⃣ File → Module
+2️⃣ Folder → Package
+3️⃣ __init__.py → Package marker
+4️⃣ Full path → Absolute import
+5️⃣ Dot (.) → Relative import
+
+If you remember these → NO MCQ can trick you 💪🔥
