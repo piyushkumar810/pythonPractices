@@ -1,0 +1,231 @@
+✅ PICKLE & SERIALIZATION — MCQs (WITH ANSWERS)
+1️⃣ Serialization means
+
+A. Converting file to object
+B. Converting object to byte stream
+C. Encrypting data
+D. Compressing data
+
+✅ Answer: B
+
+2️⃣ In Python, serialization is called
+
+A. Dumping
+B. Encoding
+C. Pickling
+D. Marshaling
+
+✅ Answer: C
+
+3️⃣ Unpickling refers to
+
+A. Object → bytes
+B. Bytes → object
+C. Object → string
+D. File → text
+
+✅ Answer: B
+
+4️⃣ Which module is used for pickling in Python?
+
+A. json
+B. marshal
+C. pickle
+D. csv
+
+✅ Answer: C
+
+5️⃣ Which mode is used to write pickle data to a file?
+
+A. "w"
+B. "r"
+C. "wb"
+D. "wt"
+
+✅ Answer: C
+
+6️⃣ Which of the following objects CANNOT be pickled?
+
+A. List
+B. Dictionary
+C. Lambda function
+D. Integer
+
+✅ Answer: C
+
+7️⃣ Pickle files store data in
+
+A. Text format
+B. XML format
+C. Binary format
+D. JSON format
+
+✅ Answer: C
+
+8️⃣ Which statement is TRUE about pickle?
+
+A. It is language independent
+B. It is secure for untrusted data
+C. It preserves object structure
+D. It stores data as plain text
+
+✅ Answer: C
+
+9️⃣ Why should pickle not be used with untrusted data?
+
+A. It is slow
+B. It may cause data loss
+C. It can execute malicious code
+D. It consumes more memory
+
+✅ Answer: C
+
+🔟 Pickle is best suited for
+
+A. Web APIs
+B. Cross-language data exchange
+C. Saving Python objects
+D. HTML parsing
+
+✅ Answer: C
+
+1️⃣1️⃣ Which file extension is commonly used for pickle files?
+
+A. .txt
+B. .csv
+C. .pkl
+D. .json
+
+✅ Answer: C
+
+1️⃣2️⃣ Can user-defined class objects be pickled?
+
+A. No
+B. Yes, always
+C. Only if class is top-level
+D. Only if class is nested
+
+✅ Answer: C
+
+1️⃣3️⃣ Pickle is
+
+A. Version independent
+B. OS independent
+C. Python specific
+D. Database dependent
+
+✅ Answer: C
+
+1️⃣4️⃣ What happens if unpickling order does not match pickling order?
+
+A. Program runs normally
+B. Data gets reordered
+C. Incorrect objects or error
+D. File is deleted
+
+✅ Answer: C
+
+1️⃣5️⃣ Which function writes an object to a pickle file?
+
+A. pickle.load()
+B. pickle.write()
+C. pickle.dump()
+D. pickle.save()
+
+✅ Answer: C
+
+1️⃣6️⃣ Which function reads an object from a pickle file?
+
+A. pickle.read()
+B. pickle.load()
+C. pickle.get()
+D. pickle.open()
+
+✅ Answer: B
+
+1️⃣7️⃣ Which data type is fully supported by pickle?
+
+A. Only primitive types
+B. Only collections
+C. Almost all Python objects
+D. Only strings
+
+✅ Answer: C
+
+1️⃣8️⃣ Pickle is commonly used in Machine Learning to
+
+A. Clean data
+B. Visualize data
+C. Store trained models
+D. Train models
+
+✅ Answer: C
+
+1️⃣9️⃣ What does pickle preserve while serializing objects?
+
+A. Variable names
+B. Object structure and references
+C. Source code
+D. Comments
+
+✅ Answer: B
+
+2️⃣0️⃣ Which of the following is a disadvantage of pickle?
+
+A. Supports only lists
+B. Not human-readable
+C. Cannot store objects
+D. Slow performance
+
+✅ Answer: B
+
+2️⃣1️⃣ Pickle should be preferred over JSON when
+
+A. Data is simple
+B. Human readability is required
+C. Complex Python objects need to be stored
+D. Data must be shared across languages
+
+✅ Answer: C
+
+2️⃣2️⃣ Pickling multiple objects in a file
+
+A. Is not allowed
+B. Requires different files
+C. Is allowed and order matters
+D. Overwrites previous object
+
+✅ Answer: C
+
+2️⃣3️⃣ Which keyword ensures class availability during unpickling?
+
+A. import
+B. global
+C. class definition before load
+D. static
+
+✅ Answer: C
+
+2️⃣4️⃣ Pickle internally stores data as
+
+A. Characters
+B. Strings
+C. Byte stream
+D. XML nodes
+
+✅ Answer: C
+
+2️⃣5️⃣ Which of the following is NOT a valid use of pickle?
+
+A. Saving Python object state
+B. Inter-process communication
+C. Sharing data with Java program
+D. Storing ML models
+
+✅ Answer: C
+
+🎯 FINAL MCQ MEMORY LOCK 🔒
+
+👉 Pickle = Python only + Binary + Powerful + Unsafe for untrusted data
+
+If you remember this line, half the MCQs are solved automatically.
