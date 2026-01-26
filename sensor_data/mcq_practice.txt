@@ -1,0 +1,225 @@
+✅ 25 MCQs (WITH ANSWERS)
+1️⃣ What is a sensor?
+
+A. A software program
+B. A database
+C. A device that converts physical quantity into data
+D. A network protocol
+
+✅ Answer: C
+
+2️⃣ Which data type is best for temperature values like 25.67°C?
+
+A. int
+B. string
+C. float
+D. bool
+
+✅ Answer: C
+
+3️⃣ Sampling rate refers to:
+
+A. Accuracy of sensor
+B. How often data is collected
+C. Unit of measurement
+D. Sensor resolution
+
+✅ Answer: B
+
+4️⃣ Resolution of a sensor means:
+
+A. Speed of data transfer
+B. Frequency of reading
+C. Smallest detectable change
+D. Maximum value
+
+✅ Answer: C
+
+5️⃣ Random fluctuations in sensor readings are called:
+
+A. Errors
+B. Noise
+C. Resolution
+D. Drift
+
+✅ Answer: B
+
+6️⃣ Which technique is commonly used to reduce sensor noise?
+
+A. Sorting
+B. Encryption
+C. Rolling average
+D. Compression
+
+✅ Answer: C
+
+7️⃣ Motion sensors usually produce which type of data?
+
+A. float
+B. string
+C. boolean
+D. complex
+
+✅ Answer: C
+
+8️⃣ Which file format is commonly used to log sensor readings?
+
+A. XML
+B. JSON
+C. CSV
+D. HTML
+
+✅ Answer: C
+
+9️⃣ A stream is best described as:
+
+A. Fixed dataset
+B. Stored file
+C. Continuous flow of data
+D. Database table
+
+✅ Answer: C
+
+🔟 Which of the following is an example of stream data?
+
+A. CSV file
+B. Excel sheet
+C. Real-time temperature readings
+D. PDF document
+
+✅ Answer: C
+
+1️⃣1️⃣ An event in streaming data refers to:
+
+A. A group of records
+B. A single data record at a time
+C. A database transaction
+D. A batch file
+
+✅ Answer: B
+
+1️⃣2️⃣ Which component generates data in streaming systems?
+
+A. Consumer
+B. Broker
+C. Producer
+D. Processor
+
+✅ Answer: C
+
+1️⃣3️⃣ Which component reads data from a stream?
+
+A. Producer
+B. Consumer
+C. Sensor
+D. Pipeline
+
+✅ Answer: B
+
+1️⃣4️⃣ Batch processing differs from stream processing because batch data:
+
+A. Never ends
+B. Is continuous
+C. Has a fixed start and end
+D. Is real-time
+
+✅ Answer: C
+
+1️⃣5️⃣ Which Python module is used for asynchronous programming?
+
+A. threading
+B. multiprocessing
+C. asyncio
+D. socket
+
+✅ Answer: C
+
+1️⃣6️⃣ What does async def define?
+
+A. Thread
+B. Process
+C. Coroutine
+D. Function
+
+✅ Answer: C
+
+1️⃣7️⃣ The await keyword is used to:
+
+A. Stop program execution
+B. Block CPU
+C. Pause coroutine and yield control
+D. Create a new thread
+
+✅ Answer: C
+
+1️⃣8️⃣ Async programming is most suitable for:
+
+A. CPU-bound tasks
+B. Mathematical computation
+C. I/O-bound tasks
+D. Sorting algorithms
+
+✅ Answer: C
+
+1️⃣9️⃣ Which statement is TRUE about coroutines?
+
+A. They run in multiple threads
+B. They block the CPU
+C. They support cooperative multitasking
+D. They execute in parallel
+
+✅ Answer: C
+
+2️⃣0️⃣ What manages and schedules coroutines in async programming?
+
+A. CPU
+B. Thread
+C. Event loop
+D. Semaphore
+
+✅ Answer: C
+
+2️⃣1️⃣ Which Python module supports multiprocessing?
+
+A. os
+B. threading
+C. multiprocessing
+D. asyncio
+
+✅ Answer: C
+
+2️⃣2️⃣ In multiprocessing, memory between processes is:
+
+A. Shared
+B. Copied but isolated
+C. Fully shared
+D. Not allocated
+
+✅ Answer: B
+
+2️⃣3️⃣ Why is if __name__ == "__main__" required in Windows?
+
+A. For faster execution
+B. To avoid syntax error
+C. To prevent infinite process spawning
+D. To enable threading
+
+✅ Answer: C
+
+2️⃣4️⃣ Which function makes the parent process wait for child processes?
+
+A. start()
+B. run()
+C. join()
+D. terminate()
+
+✅ Answer: C
+
+2️⃣5️⃣ Coroutines differ from threads because coroutines are:
+
+A. Managed by OS
+B. Heavyweight
+C. Cooperative
+D. Parallel
+
+✅ Answer: C
