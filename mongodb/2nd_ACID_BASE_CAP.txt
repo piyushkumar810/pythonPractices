@@ -1,0 +1,249 @@
+🧠 MCQs: BASE Principles, CAP Theorem, RDBMS vs NoSQL
+🔹 MCQ 1 (Basic – BASE)
+
+What does B in BASE stand for?
+
+A. Balanced
+B. Basically Available
+C. Binary Accessible
+D. Backup Enabled
+
+✅ Answer: B
+
+🧠 Explanation:
+BASE = Basically Available, Soft-state, Eventual consistency 
+
+base_principle
+
+🔹 MCQ 2 (Basic)
+
+Which principle allows replicas to temporarily hold different versions of data?
+
+A. Atomicity
+B. Consistency
+C. Soft-state
+D. Durability
+
+✅ Answer: C
+
+🧠 Explanation:
+Soft-state means data may be temporarily inconsistent 
+
+base_principle
+
+🔹 MCQ 3 (Medium)
+
+Which of the following best describes Eventual Consistency?
+
+A. Data is always consistent
+B. Data never becomes consistent
+C. Data becomes consistent after some time
+D. Data is rolled back
+
+✅ Answer: C
+
+🧠 Explanation:
+Eventual consistency ensures replicas converge over time 
+
+base_principle
+
+🔹 MCQ 4 (Medium)
+
+Why did BASE principles emerge?
+
+A. To replace SQL completely
+B. ACID is inefficient for small databases
+C. ACID is restrictive in distributed systems
+D. To support strict schemas
+
+✅ Answer: C
+
+🧠 Explanation:
+ACID becomes restrictive in large distributed clusters 
+
+base_principle
+
+🔹 MCQ 5 (Medium)
+
+Which system MOST commonly follows the BASE model?
+
+A. Oracle
+B. PostgreSQL
+C. MongoDB
+D. MySQL
+
+✅ Answer: C
+
+🧠 Explanation:
+NoSQL databases like MongoDB follow BASE principles 
+
+base_principle
+
+🔹 MCQ 6 (Medium – ACID vs BASE)
+
+Which of the following is TRUE?
+
+A. BASE guarantees immediate consistency
+B. ACID prioritizes availability
+C. BASE prioritizes availability and performance
+D. ACID is used in distributed web systems
+
+✅ Answer: C
+
+🧠 Explanation:
+BASE trades strict correctness for availability and performance 
+
+base_principle
+
+🔹 MCQ 7 (CAP Theorem – Core)
+
+According to CAP Theorem, a distributed system can guarantee at most:
+
+A. All three properties
+B. Only one property
+C. Any two properties
+D. Only consistency
+
+✅ Answer: C
+
+🧠 Explanation:
+CAP theorem states only two out of C, A, P can be guaranteed 
+
+base_principle
+
+🔹 MCQ 8 (Medium)
+
+What does Partition Tolerance (P) mean?
+
+A. Data is always consistent
+B. System works despite network failures
+C. Requests are never rejected
+D. Database runs on one node
+
+✅ Answer: B
+
+🧠 Explanation:
+Partition tolerance means system continues despite message loss or network splits 
+
+base_principle
+
+🔹 MCQ 9 (Medium – Mapping)
+
+Which CAP properties do most NoSQL databases prioritize?
+
+A. C + A
+B. C + P
+C. A + P
+D. C only
+
+✅ Answer: C
+
+🧠 Explanation:
+NoSQL systems usually choose Availability + Partition tolerance 
+
+base_principle
+
+🔹 MCQ 10 (Medium – RDBMS)
+
+Which CAP properties do traditional RDBMS focus on?
+
+A. A + P
+B. C + P
+C. A + C
+D. P only
+
+✅ Answer: B
+
+🧠 Explanation:
+RDBMS prioritize Consistency + Partition tolerance 
+
+base_principle
+
+🔹 MCQ 11 (Hard – Concept Trap)
+
+Which statement is CORRECT?
+
+A. CAP theorem applies only to NoSQL
+B. Network partitions are avoidable
+C. No system can guarantee C, A, and P simultaneously
+D. RDBMS always choose A + P
+
+✅ Answer: C
+
+🧠 Explanation:
+In real systems, network partitions are unavoidable 
+
+base_principle
+
+🔹 MCQ 12 (RDBMS vs NoSQL)
+
+Which feature is characteristic of RDBMS?
+
+A. Flexible schema
+B. Horizontal scaling
+C. Strong ACID guarantees
+D. Schema-less design
+
+✅ Answer: C
+
+🧠 Explanation:
+RDBMS provide strong ACID guarantees 
+
+base_principle
+
+🔹 MCQ 13 (NoSQL 특징)
+
+Which feature is characteristic of NoSQL databases?
+
+A. Fixed schema
+B. Vertical scaling
+C. Flexible schema
+D. Strong joins
+
+✅ Answer: C
+
+🧠 Explanation:
+NoSQL databases use schema-flexible documents 
+
+base_principle
+
+🔹 MCQ 14 (Scaling – Exam Favorite)
+
+Which scaling approach is used by NoSQL systems?
+
+A. Scale-up
+B. Scale-down
+C. Horizontal scaling
+D. Single-node optimization
+
+✅ Answer: C
+
+🧠 Explanation:
+NoSQL systems scale horizontally across clusters 
+
+base_principle
+
+🔹 MCQ 15 (Hard – Application based)
+
+Which application BEST fits RDBMS usage?
+
+A. Social media feed
+B. IoT sensor data
+C. Banking transactions
+D. Real-time chat app
+
+✅ Answer: C
+
+🧠 Explanation:
+Banking needs strong consistency and ACID 
+
+base_principle
+
+🧠 FINAL MEMORY LOCK 🔐
+BASE → Availability over consistency
+Soft-state → Temporary inconsistency
+Eventual consistency → Converges later
+
+CAP → Only 2 of C, A, P
+NoSQL → A + P
+RDBMS → C + P
