@@ -1,0 +1,203 @@
+🧠 MCQs: MongoDB Indexing (Medium → Advanced)
+🔹 MCQ 1 (Medium – Basics)
+
+What is the primary purpose of an index in MongoDB?
+
+A. Reduce storage size
+B. Improve write performance
+C. Improve query performance
+D. Enforce schema
+
+✅ Answer: C
+🧠 Index helps MongoDB find documents faster without scanning the whole collection.
+
+🔹 MCQ 2 (Medium)
+
+Which data structure does MongoDB use to implement indexes?
+
+A. Hash table
+B. AVL Tree
+C. B-tree
+D. Linked list
+
+✅ Answer: C
+🧠 MongoDB indexes are implemented using B-tree.
+
+🔹 MCQ 3 (Medium – Exam Favorite)
+
+Which operation becomes slower when many indexes exist?
+
+A. Read
+B. Query
+C. Insert / Update
+D. Find
+
+✅ Answer: C
+🧠 Indexes speed up reads but add overhead on writes.
+
+🔹 MCQ 4 (Medium)
+
+Which command creates a single-field index?
+
+A.
+
+db.col.index({a:1})
+
+
+B.
+
+db.col.createIndex({a:1})
+
+
+C.
+
+db.col.addIndex(a)
+
+
+D.
+
+db.col.makeIndex(a)
+
+
+✅ Answer: B
+
+🔹 MCQ 5 (Medium – Compound Index)
+
+Which statement about compound indexes is TRUE?
+
+A. Order of fields does not matter
+B. Works only for equality queries
+C. Order of fields matters
+D. Cannot be used for sorting
+
+✅ Answer: C
+🧠 Compound indexes follow the left-to-right (prefix) rule.
+
+🔹 MCQ 6 (Hard – Prefix Rule)
+
+Given index:
+
+{ category: 1, price: 1 }
+
+
+Which query can use this index?
+
+A. { price: 1000 }
+B. { category: "audio" }
+C. { price: 1000, category: "audio" }
+D. { stock: 10 }
+
+✅ Answer: B
+🧠 Leftmost field (category) must be used.
+
+🔹 MCQ 7 (Medium – Multikey)
+
+When does MongoDB create a multikey index?
+
+A. When indexing nested documents
+B. When indexing string fields
+C. When indexing array fields
+D. When indexing multiple collections
+
+✅ Answer: C
+🧠 Array fields automatically become multikey indexes.
+
+🔹 MCQ 8 (Hard – Unique Index)
+
+What happens if a unique index is created on a field with duplicate values?
+
+A. Index is created successfully
+B. Duplicates are removed
+C. Index creation fails
+D. Documents are deleted
+
+✅ Answer: C
+🧠 Unique index enforces uniqueness.
+
+🔹 MCQ 9 (Medium – TTL Index)
+
+Which index is used to automatically delete documents after a time?
+
+A. Sparse index
+B. Unique index
+C. TTL index
+D. Text index
+
+✅ Answer: C
+
+🔹 MCQ 10 (Hard – Production Rule)
+
+Which index build is recommended in production environments?
+
+A. Foreground
+B. Fast build
+C. Background
+D. Inline
+
+✅ Answer: C
+🧠 Background build does not block reads/writes.
+
+🔹 MCQ 11 (Hard – explain())
+
+Which output indicates that an index is being used?
+
+A. COLLSCAN
+B. IXSCAN
+C. DOCSCAN
+D. TABLESCAN
+
+✅ Answer: B
+🧠 IXSCAN = Index Scan (good).
+
+🔹 MCQ 12 (Advanced – Text Index)
+
+Which statement about text indexes is TRUE?
+
+A. Multiple text indexes allowed per collection
+B. Text index supports prefix search
+C. Only one text index per collection
+D. Text index works on numeric fields
+
+✅ Answer: C
+
+🔹 MCQ 13 (Advanced – Trap)
+
+Which field is generally NOT recommended for indexing?
+
+A. Email
+B. UserId
+C. Boolean field
+D. Foreign-key field
+
+✅ Answer: C
+🧠 Low selectivity fields (true/false) are poor index candidates.
+
+🔹 MCQ 14 (Advanced – Performance)
+
+Which factor MOST influences index effectiveness?
+
+A. Field data type
+B. Query pattern
+C. Collection size
+D. Storage engine
+
+✅ Answer: B
+🧠 Indexes must match how data is queried.
+
+🔹 MCQ 15 (Very Important)
+
+Which statement is FALSE?
+
+A. Indexes speed up reads
+B. Too many indexes slow writes
+C. MongoDB automatically chooses best index
+D. More indexes always improve performance
+
+❌ Answer: D
+
+🧠 FINAL MEMORY LOCK 🔐
+Index → faster reads
+B-tree → index structure
+Compound index → order matters
+IXSCAN → index used
+Too many indexes → slow writes
