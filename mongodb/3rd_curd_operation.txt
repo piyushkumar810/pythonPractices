@@ -1,0 +1,826 @@
+✅ QUESTION 1 (from PDF – Page 3)
+❓ Question:
+
+Insert one new product into the products collection with at least five fields.
+
+🧠 Before Solving (Quick Setup Assumption)
+
+We assume:
+
+Database: storeDB
+
+Collection: products
+
+Fields we’ll use:
+
+productId
+
+productName
+
+category
+
+price
+
+stock
+
+✅ SOLUTION
+use storeDB
+
+db.products.insertOne({
+  productId: 101,
+  productName: "Wireless Mouse",
+  category: "electronics",
+  price: 1200,
+  stock: 50
+})
+
+🧠 What this does (short & clear)
+
+insertOne() → inserts one document
+
+Document has 5 fields (as asked)
+
+Stored inside products collection
+
+✔ Question requirement satisfied
+
+✅ Output (conceptually)
+acknowledged: true
+insertedId: ObjectId(...)
+
+
+When you’re ready, say 👉 “Next question (Q2)”
+We’ll move step-by-step through the entire CRUD list 💪
+
+Sources
+next question'
+
+Great 👍
+Let’s move to QUESTION 2, same pattern.
+
+✅ QUESTION 2 (from CRUD practice)
+❓ Question:
+
+Insert multiple products into the products collection at once.
+
+🧠 Assumptions (same as before)
+
+Database: storeDB
+
+Collection: products
+
+✅ SOLUTION
+db.products.insertMany([
+  {
+    productId: 102,
+    productName: "Keyboard",
+    category: "electronics",
+    price: 1500,
+    stock: 40
+  },
+  {
+    productId: 103,
+    productName: "Notebook",
+    category: "stationery",
+    price: 80,
+    stock: 200
+  },
+  {
+    productId: 104,
+    productName: "Water Bottle",
+    category: "accessories",
+    price: 300,
+    stock: 100
+  }
+])
+
+🧠 What this does (simple)
+
+insertMany() → inserts multiple documents
+
+Each { } is one product
+
+All documents go into products collection
+
+✔ Question requirement satisfied
+
+✅ Output (conceptually)
+acknowledged: true
+insertedIds: { 0: ObjectId(...), 1: ObjectId(...), 2: ObjectId(...) }
+
+
+When ready, say 👉 “Next question (Q3)”
+We’ll continue step by step 👍
+
+next
+
+Perfect 👍
+Let’s go to QUESTION 3, same clean flow.
+
+✅ QUESTION 3 (CRUD – READ)
+❓ Question:
+
+Display all documents from the products collection.
+
+🧠 What is being asked?
+
+READ operation
+
+Fetch all documents
+
+No condition / filter
+
+✅ SOLUTION
+db.products.find()
+
+🧠 What this does (simple)
+
+find() with no condition
+
+Returns every document in products
+
+This is the basic READ operation in MongoDB
+
+✔ Question requirement satisfied
+
+✅ Sample Output (example)
+{ productId: 101, productName: "Wireless Mouse", ... }
+{ productId: 102, productName: "Keyboard", ... }
+{ productId: 103, productName: "Notebook", ... }
+
+
+When you’re ready, say 👉 “Next question (Q4)”
+We’ll continue step by step 💪
+
+Q3. Insert a product that contains an embedded document
+(details) and an array (ratings).
+
+Nice 👍
+Let’s solve Q3 cleanly and clearly.
+
+✅ QUESTION 3
+❓ Question:
+
+Insert a product that contains an embedded document (details) and an array (ratings).
+
+🧠 What is required?
+
+One product document
+
+An embedded document → details
+
+An array → ratings
+
+✅ SOLUTION
+db.products.insertOne({
+  productId: 105,
+  productName: "Smart Watch",
+  category: "electronics",
+  price: 3500,
+  details: {
+    brand: "Noise",
+    color: "Black",
+    warranty: "1 Year"
+  },
+  ratings: [4, 5, 4, 5]
+})
+
+🧠 Explanation (short & clear)
+
+details → embedded document
+
+details: { brand, color, warranty }
+
+
+ratings → array of values
+
+ratings: [4, 5, 4, 5]
+
+
+Entire data stored as one MongoDB document
+
+✔ Embedded document + array requirement satisfied
+
+✅ Concept check (exam point)
+
+MongoDB supports nested documents
+
+MongoDB supports arrays inside documents
+
+When ready, say 👉 “Next question (Q4)”
+We’ll continue 👍
+
+Q4. Create a database storeDB and switch to it.
+Q5. Create a collection named products. Insert any sample
+document of your choice.
+
+Perfect 👍
+Let’s do Q4 and Q5 step by step, short and clear, exactly how you should write/practice.
+
+✅ Q4. Create a database storeDB and switch to it
+🧠 What is asked?
+
+Create a database named storeDB
+
+Switch to it
+
+✅ SOLUTION
+use storeDB
+
+🧠 Explanation (simple)
+
+use storeDB
+
+If the database does not exist, MongoDB creates it automatically
+
+If it exists, MongoDB switches to it
+
+✔ Database created and switched
+
+✅ Q5. Create a collection named products and insert any sample document
+🧠 What is asked?
+
+Create collection: products
+
+Insert one sample document
+
+✅ SOLUTION
+db.products.insertOne({
+  productId: 201,
+  productName: "Pen",
+  category: "stationery",
+  price: 20,
+  stock: 500
+})
+
+🧠 Explanation (simple)
+
+products → collection name
+
+insertOne() → creates the collection automatically
+
+One document inserted with sample fields
+
+✔ Collection created
+✔ Sample document inserted
+
+📝 EXAM NOTE (IMPORTANT)
+
+In MongoDB:
+
+Collections are created automatically on first insert
+
+No explicit CREATE TABLE command like SQL
+
+When you’re ready, say 👉 “Next question”
+We’ll continue one by one 👍
+
+Q6. Retrieve all products from the collection.
+Q7. Display only productName and price for all products.
+Q8. Retrieve only products whose price is greater than 1000
+
+Perfect 👍
+Let’s solve Q6, Q7, and Q8 one by one, clean, exam-style, with short explanations.
+
+✅ Q6. Retrieve all products from the collection
+🧠 What is asked?
+
+READ operation
+
+Fetch all documents
+
+No condition
+
+✅ SOLUTION
+db.products.find()
+
+🧠 Explanation
+
+find() without any condition returns all documents
+
+Shows every field of every product
+
+✔ Requirement satisfied
+
+✅ Q7. Display only productName and price for all products
+🧠 What is asked?
+
+Projection
+
+Show only selected fields
+
+Hide others
+
+✅ SOLUTION
+db.products.find(
+  {},
+  { productName: 1, price: 1, _id: 0 }
+)
+
+🧠 Explanation
+
+{} → no filter (all documents)
+
+productName: 1 → include
+
+price: 1 → include
+
+_id: 0 → exclude MongoDB’s default _id
+
+✔ Only required fields displayed
+
+✅ Q8. Retrieve only products whose price is greater than 1000
+🧠 What is asked?
+
+Conditional READ
+
+Use comparison operator
+
+✅ SOLUTION
+db.products.find({ price: { $gt: 1000 } })
+
+🧠 Explanation
+
+$gt → greater than
+
+Returns products where price > 1000
+
+✔ Condition applied correctly
+
+📝 QUICK EXAM MEMORY 🔐
+find()                     → all documents
+find({}, {field:1})        → projection
+$gt, $lt, $gte, $lte       → comparison operators
+
+
+When you’re ready, say 👉 “Next question”
+We’ll continue step by step 💪
+
+Query Filters
+Q9. Retrieve products that belong to the category
+"electronics".
+Q10. Retrieve products whose brand under details.brand is
+"LogiTech".
+
+Perfect 👍
+Let’s solve Q9 and Q10 cleanly, step by step, with simple explanations (no extra theory).
+
+✅ Q9. Retrieve products that belong to the category "electronics"
+🧠 What is asked?
+
+Filter documents by a field value
+
+Field: category
+
+Value: "electronics"
+
+✅ SOLUTION
+db.products.find({ category: "electronics" })
+
+🧠 Explanation (short)
+
+category: "electronics" → exact match filter
+
+Returns only electronics products
+
+✔ Query filter applied correctly
+
+✅ Q10. Retrieve products whose brand under details.brand is "LogiTech"
+🧠 What is asked?
+
+Filter using a nested (embedded) field
+
+Field path: details.brand
+
+✅ SOLUTION
+db.products.find({ "details.brand": "LogiTech" })
+
+🧠 Explanation (short)
+
+"details.brand" → dot notation
+
+Used to access fields inside an embedded document
+
+Returns products where brand is LogiTech
+
+✔ Nested filter applied correctly
+
+📝 QUICK EXAM MEMORY 🔐
+Simple field filter      → { field: value }
+Nested field filter      → { "parent.child": value }
+
+
+When you’re ready, say 👉 “Next question”
+We’ll continue 👍
+
+Field Updates
+Q11. Update the price of any product by increasing it by 200.
+Q12. Add a new field discount to a selected product.
+Q13. Change the value of an existing field (example: update the
+brand name).
+
+Perfect 👍
+Let’s solve Q11, Q12, Q13 one by one, clear, exam-style, with short explanations.
+
+✅ Q11. Update the price of any product by increasing it by 200
+🧠 What is asked?
+
+Update operation
+
+Increase existing value
+
+Use increment operator
+
+✅ SOLUTION
+db.products.updateOne(
+  { productName: "Keyboard" },
+  { $inc: { price: 200 } }
+)
+
+🧠 Explanation (simple)
+
+$inc → increases numeric value
+
+price: 200 → adds 200 to existing price
+
+updateOne() → updates only one matching document
+
+✔ Price increased successfully
+
+✅ Q12. Add a new field discount to a selected product
+🧠 What is asked?
+
+Add a new field
+
+Field does not exist earlier
+
+✅ SOLUTION
+db.products.updateOne(
+  { productName: "Keyboard" },
+  { $set: { discount: 10 } }
+)
+
+🧠 Explanation
+
+$set:
+
+Adds field if it does not exist
+
+Updates field if it already exists
+
+discount: 10 → new field added
+
+✔ New field added successfully
+
+✅ Q13. Change the value of an existing field
+(Example: update the brand name)
+🧠 What is asked?
+
+Modify an existing field
+
+Field inside an embedded document
+
+✅ SOLUTION
+db.products.updateOne(
+  { productName: "Smart Watch" },
+  { $set: { "details.brand": "LogiTech" } }
+)
+
+🧠 Explanation
+
+"details.brand" → dot notation for embedded field
+
+$set → updates existing value
+
+✔ Brand name updated successfully
+
+📝 QUICK EXAM MEMORY 🔐
+$inc → increase/decrease number
+$set → add or update field
+updateOne → updates first matching document
+
+
+When ready, say 👉 “Next question”
+We’ll continue step by step 💪
+
+Array Updates
+Q14. Add a rating to the ratings array of a specific product.
+Q15. Remove the last rating from the ratings array.
+
+Perfect 👍
+Let’s solve Q14 and Q15 clearly, exam-style, step by step.
+
+✅ Q14. Add a rating to the ratings array of a specific product
+🧠 What is asked?
+
+Update an array field
+
+Add one new value to the array
+
+Use array update operator
+
+✅ SOLUTION
+db.products.updateOne(
+  { productName: "Smart Watch" },
+  { $push: { ratings: 5 } }
+)
+
+🧠 Explanation (simple)
+
+$push → adds a new element to an array
+
+ratings: 5 → value added at the end of the array
+
+Works only on array fields
+
+✔ Rating added successfully
+
+✅ Q15. Remove the last rating from the ratings array
+🧠 What is asked?
+
+Remove an element from an array
+
+Specifically the last element
+
+✅ SOLUTION
+db.products.updateOne(
+  { productName: "Smart Watch" },
+  { $pop: { ratings: 1 } }
+)
+
+🧠 Explanation (simple)
+
+$pop: 1 → removes last element
+
+$pop: -1 → removes first element
+
+Used only for arrays
+
+✔ Last rating removed successfully
+
+📝 QUICK EXAM MEMORY 🔐
+$push → add element to array
+$pop: 1 → remove last element
+$pop: -1 → remove first element
+
+
+When you’re ready, say 👉 “Next question”
+We’ll continue 💪
+
+is another way except push and pop
+answer in sort
+
+Yes 👍 there ARE other ways, apart from $push and $pop.
+
+Short & exam-oriented answer 👇
+🔹 Add element to array (other than $push)
+$addToSet
+
+
+👉 Adds value only if it does not already exist (no duplicates).
+
+Example:
+
+db.products.updateOne(
+  { productName: "Smart Watch" },
+  { $addToSet: { ratings: 5 } }
+)
+
+🔹 Remove element from array (other than $pop)
+$pull
+
+
+👉 Removes specific value from array.
+
+Example:
+
+db.products.updateOne(
+  { productName: "Smart Watch" },
+  { $pull: { ratings: 4 } }
+)
+
+🧠 Quick comparison (memory lock)
+$push      → add element (allows duplicates)
+$addToSet  → add element (no duplicates)
+$pop       → remove first / last element
+$pull      → remove specific value
+
+
+If you want:
+
+Array MCQs
+
+Tricky array update questions
+
+Difference-based exam questions
+
+Just say 👍
+
+Delete Operations
+Q16. Delete one product using its productId.
+Q17. Delete all products that belong to a specific category.
+Q18. Delete all products whose price is less than 200.
+▶ Mixed Practice
+Q19. Insert a new product, update one field, add a rating, then
+delete that product.
+Q20. Retrieve products using at least two filter conditions
+(example: price > 500 and category = ”audio”).
+
+Perfect 👍
+Let’s solve Q16–Q20 step by step, clean, exam-style, with short explanations.
+
+✅ Q16. Delete one product using its productId
+🧠 What is asked?
+
+Delete operation
+
+Only one document
+
+Condition: productId
+
+✅ SOLUTION
+db.products.deleteOne({ productId: 201 })
+
+🧠 Explanation
+
+deleteOne() → deletes first matching document
+
+Filter based on productId
+
+✔ One product deleted
+
+✅ Q17. Delete all products that belong to a specific category
+🧠 What is asked?
+
+Delete multiple documents
+
+Condition: category
+
+✅ SOLUTION
+db.products.deleteMany({ category: "stationery" })
+
+🧠 Explanation
+
+deleteMany() → deletes all matching documents
+
+Removes all stationery products
+
+✔ Multiple products deleted
+
+✅ Q18. Delete all products whose price is less than 200
+🧠 What is asked?
+
+Conditional delete
+
+Use comparison operator
+
+✅ SOLUTION
+db.products.deleteMany({ price: { $lt: 200 } })
+
+🧠 Explanation
+
+$lt → less than
+
+Deletes all products with price < 200
+
+✔ Condition applied correctly
+
+▶️ MIXED PRACTICE
+✅ Q19. Insert a new product → update one field → add a rating → delete that product
+🔹 Step 1: Insert product
+db.products.insertOne({
+  productId: 301,
+  productName: "Headphones",
+  category: "audio",
+  price: 800,
+  ratings: []
+})
+
+🔹 Step 2: Update one field (price)
+db.products.updateOne(
+  { productId: 301 },
+  { $set: { price: 900 } }
+)
+
+🔹 Step 3: Add a rating
+db.products.updateOne(
+  { productId: 301 },
+  { $push: { ratings: 4 } }
+)
+
+🔹 Step 4: Delete the product
+db.products.deleteOne({ productId: 301 })
+
+
+✔ Full CRUD cycle completed
+
+✅ Q20. Retrieve products using two filter conditions
+
+(price > 500 AND category = "audio")
+
+🧠 What is asked?
+
+Multiple conditions
+
+AND operation (default in MongoDB)
+
+✅ SOLUTION
+db.products.find({
+  price: { $gt: 500 },
+  category: "audio"
+})
+
+🧠 Explanation
+
+MongoDB applies AND by default
+
+Both conditions must be true
+
+✔ Correct multi-condition filter
+
+🧠 QUICK EXAM MEMORY 🔐
+deleteOne()  → delete single document
+deleteMany() → delete multiple documents
+$lt / $gt    → comparison filters
+Multiple conditions → AND by default
+
+
+If you want:
+
+CRUD MCQs
+
+Only questions (test mode)
+
+Tricky delete/update cases
+
+Short exam answers
+
+Just say 👍
+
+db.products.find({
+  price: { $gt: 500 },
+  category: "audio"
+})
+
+
+for above query is this correct
+db.products.find({
+$and:[
+{price:{$gt:500}},
+{category:"audio"}
+]
+})
+
+✅ Yes — your query is 100% CORRECT.
+
+Both queries are logically equivalent in MongoDB 👍
+They will return the same result.
+
+🔹 Query 1 (Implicit AND — most common)
+db.products.find({
+  price: { $gt: 500 },
+  category: "audio"
+})
+
+
+✔ MongoDB applies AND by default when you list multiple conditions.
+
+🔹 Query 2 (Explicit AND — also correct)
+db.products.find({
+  $and: [
+    { price: { $gt: 500 } },
+    { category: "audio" }
+  ]
+})
+
+
+✔ $and explicitly combines conditions.
+
+🧠 IMPORTANT EXAM RULE 🔐
+Multiple conditions in find() = AND by default
+$and is optional in simple cases
+
+❓ When should you USE $and?
+
+You need $and when:
+
+You use multiple conditions on the SAME field
+
+Example:
+
+db.products.find({
+  $and: [
+    { price: { $gt: 500 } },
+    { price: { $lt: 2000 } }
+  ]
+})
+
+❌ This would be WRONG without $and:
+// ❌ WRONG
+db.products.find({
+  price: { $gt: 500 },
+  price: { $lt: 2000 }
+})
+
+
+(Second price overwrites the first)
