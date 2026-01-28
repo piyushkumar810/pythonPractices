@@ -1,0 +1,278 @@
+🧠 MCQs: Embedded vs Referenced Schema in MongoDB
+🔹 MCQ 1 (Medium – Concept)
+
+Why does schema design matter in MongoDB even though it is schema-less?
+
+A. MongoDB does not support indexing
+B. MongoDB enforces fixed schemas
+C. Schema design affects performance and query cost
+D. Schema design is required only for ACID compliance
+
+✅ Answer: C
+
+🧠 Explanation:
+MongoDB allows flexible schemas, but poor design increases query cost and duplication 
+
+embded
+
+.
+
+🔹 MCQ 2 (Medium)
+
+In MongoDB, data is stored as:
+
+A. Rows in tables
+B. Objects in files
+C. Documents in collections
+D. Tuples in relations
+
+✅ Answer: C
+
+🧠 Explanation:
+MongoDB stores data as documents inside collections, not rows in tables 
+
+embded
+
+.
+
+🔹 MCQ 3 (Medium)
+
+Which schema design stores related data inside the same document?
+
+A. Normalized schema
+B. Referenced schema
+C. Embedded schema
+D. Relational schema
+
+✅ Answer: C
+
+🧠 Explanation:
+Embedded schema keeps related data inside a single document 
+
+embded
+
+.
+
+🔹 MCQ 4 (Medium)
+
+Embedded schema is MOST suitable when:
+
+A. Relationship is many-to-many
+B. Data grows without bound
+C. Related data is always accessed together
+D. Data is reused across collections
+
+✅ Answer: C
+
+🧠 Explanation:
+Embedding is ideal when data is read together most of the time 
+
+embded
+
+.
+
+🔹 MCQ 5 (Medium–Hard)
+
+Which of the following is a disadvantage of embedded schema?
+
+A. Poor read performance
+B. Increased round-trips
+C. Data duplication
+D. Complex queries
+
+✅ Answer: C
+
+🧠 Explanation:
+Embedded design can cause data duplication if the same data is repeated many times 
+
+embded
+
+.
+
+🔹 MCQ 6 (Hard – Application based)
+
+A product can have thousands of reviews, and reviews grow continuously.
+Which schema design is BEST?
+
+A. Embedded
+B. Referenced
+C. Hybrid only
+D. Flat document
+
+✅ Answer: B
+
+🧠 Explanation:
+When data grows without bound, referencing is recommended 
+
+embded
+
+.
+
+🔹 MCQ 7 (Hard)
+
+Which schema design stores related data in separate collections linked by identifiers?
+
+A. Embedded
+B. Denormalized
+C. Referenced
+D. Hierarchical
+
+✅ Answer: C
+
+🧠 Explanation:
+Referenced schema keeps related entities in separate collections 
+
+embded
+
+.
+
+🔹 MCQ 8 (Hard – Cardinality)
+
+According to MongoDB schema design rules, many-to-many relationships should be:
+
+A. Embedded
+B. Ignored
+C. Referenced
+D. Flattened
+
+✅ Answer: C
+
+🧠 Explanation:
+Many-to-many relationships should always use referencing 
+
+embded
+
+.
+
+🔹 MCQ 9 (Hard – Performance)
+
+Which schema design provides the fastest read performance?
+
+A. Referenced schema
+B. Embedded schema
+C. Relational schema
+D. Normalized schema
+
+✅ Answer: B
+
+🧠 Explanation:
+Embedded schema gives single-document reads, which are fastest 
+
+embded
+
+.
+
+🔹 MCQ 10 (Hard – Document Size)
+
+MongoDB documents have a maximum size limit of:
+
+A. 8 MB
+B. 10 MB
+C. 16 MB
+D. 32 MB
+
+✅ Answer: C
+
+🧠 Explanation:
+MongoDB enforces a 16 MB document size limit, influencing schema decisions 
+
+embded
+
+.
+
+🔹 MCQ 11 (Advanced – Update Frequency)
+
+Which rule is CORRECT regarding update frequency?
+
+A. Frequently updated fields should be embedded
+B. Rarely updated fields should be referenced
+C. Frequently updated fields should be referenced
+D. Update frequency does not affect schema design
+
+✅ Answer: C
+
+🧠 Explanation:
+Frequently updated fields → reference to avoid rewriting large documents 
+
+embded
+
+.
+
+🔹 MCQ 12 (Advanced – Real scenario)
+
+A customer is shared across hundreds of orders and must be updated centrally.
+Which schema design is BEST?
+
+A. Embedded
+B. Referenced
+C. Key-value
+D. Columnar
+
+✅ Answer: B
+
+🧠 Explanation:
+Referencing provides a single source of truth for shared entities 
+
+embded
+
+.
+
+🔹 MCQ 13 (Advanced – Comparison trap)
+
+Which statement is TRUE?
+
+A. Embedded schema avoids duplication
+B. Referenced schema requires joins at DB level
+C. Embedded schema reduces number of queries
+D. Referenced schema gives fastest reads
+
+✅ Answer: C
+
+🧠 Explanation:
+Embedded schema minimizes queries by keeping all data in one document 
+
+embded
+
+.
+
+🔹 MCQ 14 (Advanced – Query pattern)
+
+MongoDB schema design should primarily be based on:
+
+A. Data normalization rules
+B. Storage optimization
+C. Application query patterns
+D. Foreign key relationships
+
+✅ Answer: C
+
+🧠 Explanation:
+MongoDB schemas are designed around how data is queried, not strict normalization 
+
+embded
+
+.
+
+🔹 MCQ 15 (Very Important – Exam Favorite)
+
+Which of the following is FALSE?
+
+A. Embedded schema is good for one-to-few relationships
+B. Referenced schema avoids duplication
+C. Embedded schema is ideal for unlimited growth
+D. Referenced schema supports shared data
+
+❌ Answer: C
+
+🧠 Explanation:
+Embedded schema is NOT suitable for unlimited growth 
+
+embded
+
+.
+
+🧠 FINAL MEMORY LOCK 🔐
+Embed → Read together, one-to-few, fast reads
+Reference → Large growth, shared data, many-to-many
+Schema design → Based on query patterns
+Document size limit → 16 MB
