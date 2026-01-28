@@ -1,0 +1,186 @@
+🧠 MCQs: NORMALIZATION (1NF, 2NF, 3NF)
+🔹 MCQ 1 (Basic)
+
+Which of the following violates 1NF?
+
+A. Atomic attributes
+B. Repeating groups
+C. Composite primary key
+D. Functional dependency
+
+✅ Answer: B
+
+🧠 Explanation:
+1NF requires atomic (single) values. Repeating groups violate 1NF.
+
+🔹 MCQ 2 (Basic)
+
+A table with attributes (StudentID, PhoneNumbers) where PhoneNumbers contains multiple values violates:
+
+A. 1NF
+B. 2NF
+C. 3NF
+D. BCNF
+
+✅ Answer: A
+
+🧠 Explanation:
+Multi-valued attributes violate 1NF.
+
+🔹 MCQ 3 (Medium)
+
+In a relation with composite primary key (A, B), which dependency causes a 2NF violation?
+
+A. (A, B) → C
+B. A → B
+C. A → C
+D. C → D
+
+✅ Answer: C
+
+🧠 Explanation:
+If a non-key attribute (C) depends on part of a composite key (A) → partial dependency → violates 2NF.
+
+🔹 MCQ 4 (Medium)
+
+Which of the following is TRUE about 2NF?
+
+A. It removes transitive dependency
+B. It removes multivalued dependency
+C. It removes partial dependency
+D. It guarantees BCNF
+
+✅ Answer: C
+
+🧠 Explanation:
+2NF focuses on partial dependencies, not transitive ones.
+
+🔹 MCQ 5 (Medium)
+
+If a relation has a single-attribute primary key, then:
+
+A. It cannot be in 2NF
+B. It automatically satisfies 2NF
+C. It violates 1NF
+D. It must be decomposed
+
+✅ Answer: B
+
+🧠 Explanation:
+Partial dependency is possible only with composite keys.
+
+🔹 MCQ 6 (Medium–Hard)
+
+Given the dependency chain:
+
+A → B
+B → C
+
+
+Which dependency causes 3NF violation?
+
+A. A → B
+B. B → C
+C. A → C
+D. A → B and B → C
+
+✅ Answer: B
+
+🧠 Explanation:
+A non-key attribute (B) determining another non-key attribute (C) causes transitive dependency.
+
+🔹 MCQ 7 (Hard)
+
+Which of the following conditions MUST be true for a relation to be in 3NF?
+
+A. Every determinant is a super key
+B. No partial dependency exists
+C. No transitive dependency exists
+D. Only single-attribute keys exist
+
+✅ Answer: C
+
+🧠 Explanation:
+3NF eliminates transitive dependencies.
+
+🔹 MCQ 8 (Hard – Key Concept)
+
+Which of the following best defines a candidate key?
+
+A. Any attribute in the relation
+B. A minimal set of attributes that uniquely identifies tuples
+C. A super key with redundant attributes
+D. A foreign key
+
+✅ Answer: B
+
+🧠 Explanation:
+Candidate key = minimal super key.
+
+🔹 MCQ 9 (Hard – Based on Your Question)
+
+For the relation
+R(A, B, C, D)
+with FDs:
+
+A → B
+B → C
+A → D
+
+
+What is the highest normal form satisfied?
+
+A. 1NF
+B. 2NF
+C. 3NF
+D. BCNF
+
+✅ Answer: B
+
+🧠 Explanation:
+There is a transitive dependency: A → B → C, so 3NF is violated.
+
+🔹 MCQ 10 (Hard – Concept Trap)
+
+Which of the following anomalies is caused by transitive dependency?
+
+A. Insertion anomaly
+B. Update anomaly
+C. Deletion anomaly
+D. All of the above
+
+✅ Answer: D
+
+🧠 Explanation:
+Transitive dependency causes redundancy, leading to all three anomalies.
+
+🔹 MCQ 11 (Hard)
+
+Which normal form is specifically designed to remove multivalued dependencies?
+
+A. 3NF
+B. BCNF
+C. 4NF
+D. 5NF
+
+✅ Answer: C
+
+🔹 MCQ 12 (Hard – Exam Favorite)
+
+Which statement is CORRECT?
+
+A. BCNF is always dependency preserving
+B. 3NF may allow some redundancy
+C. 2NF removes transitive dependency
+D. 1NF removes partial dependency
+
+✅ Answer: B
+
+🧠 Explanation:
+3NF allows some redundancy to preserve dependencies.
+
+🧠 QUICK MEMORY LOCK 🔐
+1NF → Atomic values
+2NF → No partial dependency
+3NF → No transitive dependency
+Candidate key → Minimal identifier
