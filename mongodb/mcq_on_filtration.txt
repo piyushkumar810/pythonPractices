@@ -1,0 +1,286 @@
+MCQ 1
+
+Which of the following queries retrieves products where
+price > 500 AND category = "audio"?
+
+A.
+
+db.products.find({ price > 500, category: "audio" })
+
+
+B.
+
+db.products.find({
+  price: { $gt: 500 },
+  category: "audio"
+})
+
+
+C.
+
+db.products.find({
+  $or: [
+    { price: { $gt: 500 } },
+    { category: "audio" }
+  ]
+})
+
+
+D.
+
+db.products.find({ price: { $gt: "500" } })
+
+
+✅ Answer: B
+
+🧠 Explanation:
+Multiple conditions → implicit AND in MongoDB.
+
+MCQ 2
+
+Which operator is used to explicitly apply AND logic in MongoDB?
+
+A. $or
+B. $gt
+C. $and
+D. $in
+
+✅ Answer: C
+
+MCQ 3
+
+Which of the following statements is TRUE?
+
+A. $and is mandatory for multiple conditions
+B. MongoDB uses OR by default
+C. MongoDB uses AND by default for multiple fields
+D. $and works only with numbers
+
+✅ Answer: C
+
+MCQ 4
+
+Which query is CORRECT to retrieve products with
+price > 500 and price < 2000?
+
+A.
+
+db.products.find({
+  price: { $gt: 500, $lt: 2000 }
+})
+
+
+B.
+
+db.products.find({
+  price: { $gt: 500 },
+  price: { $lt: 2000 }
+})
+
+
+C.
+
+db.products.find({
+  $or: [
+    { price: { $gt: 500 } },
+    { price: { $lt: 2000 } }
+  ]
+})
+
+
+D.
+
+db.products.find({ price: [500, 2000] })
+
+
+✅ Answer: A
+
+🧠 Explanation:
+Same field conditions can be combined inside one object.
+
+MCQ 5
+
+Which operator retrieves documents where any one condition is true?
+
+A. $and
+B. $gt
+C. $or
+D. $eq
+
+✅ Answer: C
+
+MCQ 6
+
+Which query retrieves products whose category is either "audio" or "electronics"?
+
+A.
+
+db.products.find({ category: "audio", "electronics" })
+
+
+B.
+
+db.products.find({
+  $or: [
+    { category: "audio" },
+    { category: "electronics" }
+  ]
+})
+
+
+C.
+
+db.products.find({ category: { $gt: "audio" } })
+
+
+D.
+
+db.products.find({ category: ["audio", "electronics"] })
+
+
+✅ Answer: B
+
+MCQ 7
+
+Which operator is used to filter values greater than a given value?
+
+A. $lt
+B. $eq
+C. $gt
+D. $ne
+
+✅ Answer: C
+
+MCQ 8
+
+Which query deletes all products with price < 200?
+
+A.
+
+db.products.deleteOne({ price: { $lt: 200 } })
+
+
+B.
+
+db.products.deleteMany({ price: { $lt: 200 } })
+
+
+C.
+
+db.products.remove({ price < 200 })
+
+
+D.
+
+db.products.find({ price: { $lt: 200 } })
+
+
+✅ Answer: B
+
+MCQ 9
+
+Which query retrieves documents using a nested field?
+
+A.
+
+db.products.find({ details, brand: "LogiTech" })
+
+
+B.
+
+db.products.find({ "details.brand": "LogiTech" })
+
+
+C.
+
+db.products.find({ details["brand"]: "LogiTech" })
+
+
+D.
+
+db.products.find({ details.brand = "LogiTech" })
+
+
+✅ Answer: B
+
+MCQ 10
+
+Which statement is FALSE?
+
+A. $and can be used explicitly
+B. MongoDB supports implicit AND
+C. $or requires an array of conditions
+D. Multiple conditions on same field don’t need $and
+
+❌ Answer: D
+
+🧠 Explanation:
+Multiple conditions on the same field require $and or combined operators.
+
+🧠 QUICK MEMORY LOCK 🔐
+Different fields → implicit AND
+Same field → combine operators or use $and
+$or → any one condition true
+$gt / $lt → comparisons
+
+
+If you want:
+
+MCQs without answers (test mode)
+
+Tricky AND/OR questions
+
+CRUD + filters mixed MCQs
+
+Just tell me 👍
+
+here we can use and operator or not
+db.products.find({
+  price: { $gt: 500, $lt: 2000 }
+})
+
+✅ Yes — here you do NOT need the $and operator.
+Your query is correct as written 👍
+
+db.products.find({
+  price: { $gt: 500, $lt: 2000 }
+})
+
+🧠 Why $and is NOT required here
+
+Both conditions are on the same field (price)
+
+MongoDB allows multiple comparison operators on one field inside the same object
+
+MongoDB treats this as:
+
+price > 500 AND price < 2000
+
+
+✔ Clean
+✔ Preferred
+✔ Exam-correct
+
+✅ Equivalent form using $and (also correct, but unnecessary)
+db.products.find({
+  $and: [
+    { price: { $gt: 500 } },
+    { price: { $lt: 2000 } }
+  ]
+})
+
+
+✔ Works
+❌ More verbose
+
+❌ WRONG way (important trap)
+// ❌ WRONG – second price overwrites first
+db.products.find({
+  price: { $gt: 500 },
+  price: { $lt: 2000 }
+})
+
+🧠 FINAL RULE (LOCK THIS 🔐)
+Same field + multiple comparisons → NO $and needed
+Different fields → implicit AND
+Same field in separate objects → use $and
