@@ -1,0 +1,281 @@
+🧠 MCQs: Document Model, JSON, BSON, Document Databases
+🔹 MCQ 1 (Basic – Concept)
+
+What is the main characteristic of the Document Data Model?
+
+A. Data stored in rows and columns
+B. Data stored as key–value pairs only
+C. Data stored as documents grouping related fields
+D. Data stored as graphs
+
+✅ Answer: C
+
+🧠 Explanation:
+Document model stores data as documents, not tables, grouping related fields together 
+
+document model json
+
+.
+
+🔹 MCQ 2 (Basic)
+
+Which of the following best explains why document databases are widely used in web applications?
+
+A. They enforce strict schemas
+B. They support only relational queries
+C. They are flexible and schema-less
+D. They do not support nested data
+
+✅ Answer: C
+
+🧠 Explanation:
+Document databases are flexible and schema-less, ideal for modern apps 
+
+document model json
+
+.
+
+🔹 MCQ 3 (Medium)
+
+Which data format is human-readable and uses key–value pairs?
+
+A. BSON
+B. XML
+C. JSON
+D. Binary
+
+✅ Answer: C
+
+🧠 Explanation:
+JSON (JavaScript Object Notation) is a human-readable, lightweight format 
+
+document model json
+
+.
+
+🔹 MCQ 4 (Medium – Syntax trap)
+
+In JSON, objects are enclosed using:
+
+A. ( )
+B. [ ]
+C. < >
+D. { }
+
+✅ Answer: D
+
+🧠 Explanation:
+JSON objects use curly braces { }, arrays use [ ] 
+
+document model json
+
+.
+
+🔹 MCQ 5 (Medium)
+
+Which of the following data types is supported by JSON?
+
+A. Functions
+B. Pointers
+C. Arrays
+D. Files
+
+✅ Answer: C
+
+🧠 Explanation:
+JSON supports strings, numbers, booleans, arrays, and nested objects 
+
+document model json
+
+.
+
+🔹 MCQ 6 (Medium – Example based)
+
+Given the JSON document:
+
+{
+  "name": "Aarathi",
+  "age": 23,
+  "skills": ["Python", "SQL"]
+}
+
+
+The value of skills is a:
+
+A. String
+B. Object
+C. Array
+D. Number
+
+✅ Answer: C
+
+🧠 Explanation:
+skills is enclosed in [ ], so it is an array 
+
+document model json
+
+.
+
+🔹 MCQ 7 (Medium–Hard)
+
+What is BSON in MongoDB?
+
+A. A compressed version of JSON for APIs
+B. A binary representation of JSON used internally
+C. A replacement for JSON in browsers
+D. A schema definition language
+
+✅ Answer: B
+
+🧠 Explanation:
+BSON is Binary JSON, used internally by MongoDB 
+
+document model json
+
+.
+
+🔹 MCQ 8 (Hard – Reasoning)
+
+Why is JSON alone not sufficient for MongoDB’s internal storage?
+
+A. JSON does not support arrays
+B. JSON is too large
+C. JSON lacks complex data types and is slow to parse
+D. JSON cannot represent objects
+
+✅ Answer: C
+
+🧠 Explanation:
+JSON is text-based and lacks advanced data types like Date, ObjectId 
+
+document model json
+
+.
+
+🔹 MCQ 9 (Hard – Feature identification)
+
+Which of the following data types is supported by BSON but NOT by JSON?
+
+A. String
+B. Boolean
+C. Date
+D. Array
+
+✅ Answer: C
+
+🧠 Explanation:
+BSON supports additional types like Date, ObjectId, Binary 
+
+document model json
+
+.
+
+🔹 MCQ 10 (Hard – Comparison)
+
+Which statement about JSON vs BSON is CORRECT?
+
+A. JSON is binary and faster than BSON
+B. BSON is human-readable
+C. BSON is larger but faster to process
+D. JSON supports indexing better
+
+✅ Answer: C
+
+🧠 Explanation:
+BSON is binary, larger in size, but faster to read/write 
+
+document model json
+
+.
+
+🔹 MCQ 11 (Hard – Document DB Concept)
+
+Which of the following is a document database?
+
+A. MySQL
+B. PostgreSQL
+C. MongoDB
+D. Oracle
+
+✅ Answer: C
+
+🧠 Explanation:
+MongoDB stores data as JSON/BSON documents 
+
+document model json
+
+.
+
+🔹 MCQ 12 (Hard – Schema concept)
+
+Which statement about schema-less document databases is TRUE?
+
+A. Documents cannot have structure
+B. All documents must have identical fields
+C. Structure may vary between documents
+D. Schema-less means no validation
+
+✅ Answer: C
+
+🧠 Explanation:
+Schema-less means flexible schema, not no structure 
+
+document model json
+
+.
+
+🔹 MCQ 13 (Hard – Application based)
+
+Which application scenario BEST fits a document database?
+
+A. Banking transaction system
+B. Fixed-schema payroll system
+C. Content management system
+D. Compiler design
+
+✅ Answer: C
+
+🧠 Explanation:
+Document DBs handle nested, flexible content very well.
+
+🔹 MCQ 14 (Very Important MCQ Trap)
+
+Which statement is FALSE?
+
+A. Document databases store data as documents
+B. BSON is human-readable
+C. JSON is lightweight and text-based
+D. MongoDB uses BSON internally
+
+❌ Answer: B
+
+🧠 Explanation:
+BSON is binary, not human-readable 
+
+document model json
+
+.
+
+🔹 MCQ 15 (Exam Favorite)
+
+Which feature of BSON enables efficient indexing and querying?
+
+A. Text-based structure
+B. Type metadata
+C. Lack of schema
+D. Compression
+
+✅ Answer: B
+
+🧠 Explanation:
+BSON stores type metadata, improving indexing performance 
+
+document model json
+
+.
+
+🧠 FINAL MEMORY LOCK 🔐
+Document Model → Documents, not tables
+JSON → Human-readable, text
+BSON → Binary, faster, more data types
+Document DB → Schema-less, flexible
