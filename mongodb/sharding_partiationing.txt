@@ -1,0 +1,233 @@
+🧠 MCQs: MongoDB Sharding & Partitioning
+🔹 MCQ 1 (Medium – Core Idea)
+
+What is the primary problem that sharding solves?
+
+A. Data inconsistency
+B. Schema rigidity
+C. Single server resource limits
+D. Lack of indexing
+
+✅ Answer: C
+🧠 One server cannot grow forever (CPU, RAM, disk, network limits). 
+
+sharding
+
+🔹 MCQ 2 (Medium)
+
+Which statement BEST differentiates partitioning from sharding?
+
+A. Partitioning duplicates data, sharding does not
+B. Partitioning splits data; sharding distributes it across machines
+C. Sharding is vertical scaling
+D. Partitioning requires replica sets
+
+✅ Answer: B
+🧠 Partitioning splits data; sharding distributes partitions across machines. 
+
+sharding
+
+🔹 MCQ 3 (Medium)
+
+Which scaling approach does sharding represent?
+
+A. Vertical scaling (scale-up)
+B. Horizontal scaling (scale-out)
+C. Diagonal scaling
+D. In-memory scaling
+
+✅ Answer: B
+🧠 Sharding is MongoDB’s main scale-out (horizontal) strategy. 
+
+sharding
+
+🔹 MCQ 4 (Medium – Symptoms)
+
+Which symptom indicates the need for sharding?
+
+A. Low disk usage
+B. Index fits entirely in RAM
+C. Writes slow due to disk saturation
+D. Small collection size
+
+✅ Answer: C
+🧠 Slow writes due to disk/lock contention signal sharding need. 
+
+sharding
+
+🔹 MCQ 5 (Medium – Key Terms)
+
+In MongoDB sharding, a shard is:
+
+A. A query router
+B. A metadata store
+C. A node (or replica set) storing a subset of data
+D. A chunk of documents
+
+✅ Answer: C
+🧠 Shard stores a subset of application data. 
+
+sharding
+
+🔹 MCQ 6 (Medium)
+
+What is a chunk in MongoDB sharding?
+
+A. A replica of data
+B. A contiguous range of shard key values
+C. A full collection
+D. A database snapshot
+
+✅ Answer: B
+🧠 Data is split into chunks based on shard key ranges. 
+
+sharding
+
+🔹 MCQ 7 (Medium – Architecture)
+
+Which component routes queries to the correct shard(s)?
+
+A. Shard server
+B. Config server
+C. mongod
+D. mongos
+
+✅ Answer: D
+🧠 Applications connect to mongos, the query router. 
+
+sharding
+
+🔹 MCQ 8 (Medium)
+
+What do config servers store?
+
+A. Application data
+B. Query results
+C. Cluster metadata and chunk information
+D. User credentials only
+
+✅ Answer: C
+🧠 Config servers store metadata about the cluster and chunks. 
+
+sharding
+
+🔹 MCQ 9 (Hard – Shard Key)
+
+Which statement about a shard key is TRUE?
+
+A. It duplicates data across shards
+B. It decides which shard stores a document
+C. It is optional in sharded clusters
+D. It improves indexing only
+
+✅ Answer: B
+🧠 Shard key determines data distribution and query targeting. 
+
+sharding
+
+🔹 MCQ 10 (Hard – Properties)
+
+Which shard key property helps even data distribution?
+
+A. Low cardinality
+B. High cardinality
+C. Fixed values
+D. Boolean values
+
+✅ Answer: B
+🧠 High cardinality (many distinct values) distributes load better. 
+
+sharding
+
+🔹 MCQ 11 (Hard – Query Routing)
+
+Queries that do not include the shard key result in:
+
+A. Targeted queries
+B. Indexed reads only
+C. Broadcast (scatter-gather) queries
+D. Single-shard execution
+
+✅ Answer: C
+🧠 mongos must query many shards and merge results. 
+
+sharding
+
+🔹 MCQ 12 (Hard – Hotspots)
+
+What is hotspotting?
+
+A. Even distribution of writes
+B. Many writes concentrated on one shard
+C. Balanced chunk movement
+D. Fast read performance
+
+✅ Answer: B
+🧠 A small shard key range receives most writes, overloading one shard. 
+
+sharding
+
+🔹 MCQ 13 (Advanced – Partitioning Strategy)
+
+Which strategy is BEST for range queries (e.g., date ranges)?
+
+A. Hashed partitioning
+B. Random partitioning
+C. Range-based partitioning
+D. Key-value partitioning
+
+✅ Answer: C
+🧠 Range partitioning groups documents by shard key ranges. 
+
+sharding
+
+🔹 MCQ 14 (Advanced)
+
+Which partitioning strategy gives even write distribution but hurts range queries?
+
+A. Range-based
+B. Hashed
+C. Vertical
+D. Manual
+
+✅ Answer: B
+🧠 Hashed keys distribute writes evenly; range targeting is harder. 
+
+sharding
+
+🔹 MCQ 15 (Advanced – Balancing)
+
+What is the purpose of balancing in a sharded cluster?
+
+A. Duplicate data for fault tolerance
+B. Evenly distribute chunks across shards
+C. Speed up indexing
+D. Reduce network latency
+
+✅ Answer: B
+🧠 Balancing prevents hot shards and storage skew. 
+
+sharding
+
+🔹 MCQ 16 (Advanced – Exam Trap)
+
+Which shard key choice is NOT recommended?
+
+A. orderId
+B. userId
+C. timestamp (sequential)
+D. high-cardinality UUID
+
+✅ Answer: C
+🧠 Sequential keys can create write hotspots. 
+
+sharding
+
+🧠 FINAL MEMORY LOCK 🔐
+Sharding → horizontal scaling
+Shard key → decides data placement
+Chunks → ranges of shard key values
+mongos → query router
+Broadcast query → no shard key in query
+Hashed → even writes
+Range → good for range queries
