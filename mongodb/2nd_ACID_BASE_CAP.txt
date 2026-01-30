@@ -1,6 +1,5 @@
 🧠 MCQs: BASE Principles, CAP Theorem, RDBMS vs NoSQL
-🔹 MCQ 1 (Basic – BASE)
-
+🔹 MCQ 1
 What does B in BASE stand for?
 
 A. Balanced
