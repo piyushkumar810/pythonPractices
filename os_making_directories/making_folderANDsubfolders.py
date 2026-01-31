@@ -1,14 +1,13 @@
 import os
 
 # base path and location where you want to create folder
-base_path=r"C:\Users\piyush kumar\OneDrive\Desktop\GitHub\pythonPractices"
+base_path="C:\\Users\\piyush kumar\\OneDrive\\Desktop\\GitHub\\pythonPractices"
 
 folders=[
-    "file_handling\handling_csv_file",
-    "file_handling\handling_excel_file",
-    "file_handling\handling_json_file",
-    "file_handling\handling_text_file",
-    "file_handling\handling_xml_file"
+    "Best_senario_based_question_all_units\\unit_1",
+    "Best_senario_based_question_all_units\\unit_2",
+    "Best_senario_based_question_all_units\\unit_3",
+    "Best_senario_based_question_all_units\\unit_4"
 ]
 
 for folder in folders:
