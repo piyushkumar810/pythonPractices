@@ -1,4 +1,9 @@
 
+# Write list comprehensions to:
+# Print the first and last letter of every name in a list.
+# Print a list of strings in uppercase.
+# Print the reverse of each name in a list.
+
 list_comp=["piyush","navyaa","priya","prabhat","sonu"]
 result=[name[0]+name[-1] for name in list_comp]
 print(result)
