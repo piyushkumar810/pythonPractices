@@ -1,10 +1,4 @@
 
-list_comp=["piyush","navyaa","priya","prabhat","sonu"]
-result=[name[0]+name[-1] for name in list_comp]
-print(result)
-
-uppercase_list=[str.upper() for str in list_comp ]
-print(uppercase_list)
-
-reverse_name=[rev_name[::-1] for rev_name in list_comp]
-print(reverse_name)
+words = ["music", "analysis", "soul"]
+s = [len(word) for word in words]
+print(s)
