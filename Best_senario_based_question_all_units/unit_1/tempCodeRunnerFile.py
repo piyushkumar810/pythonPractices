@@ -1,9 +1,16 @@
 
-num=143
-sum=0
-while(num>0):
-    rem=num%10
-    num=num//10
-    sum=sum+rem
+def dec_to_bin():
+    num = int(input("Enter a decimal number: "))
 
-print(sum)
+    if num == 0:
+        print("Binary: 0")
+        return
+
+    binary = ""
+    while num > 0:
+        binary = str(num % 2) + binary
+        num = num // 2
+
+    print("Binary:", binary)
+
+dec_to_bin()
