@@ -1,4 +1,12 @@
+from datetime import date,time,datetime,timedelta
 
-n=int(input("enter the row "))
-for i in range(1,n+1):
-    print("*"*i )
+current_date=datetime.now()
+print(current_date)
+
+d = date(2026, 2, 4)
+t = time(10, 30, 45)
+dt = datetime(2026, 2, 4, 10, 30, 45)
+
+print(d)
+print(t)
+print(dt)
