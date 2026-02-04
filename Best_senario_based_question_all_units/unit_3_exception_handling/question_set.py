@@ -285,10 +285,11 @@ Write a Python program to:
 Read the file
 Display total and average marks of each student
 '''
+
 import csv
 
 # ---------- STEP 1: CREATE student.csv FILE ----------
-with open("student.csv", "w", newline="") as file:
+with open(r"C:\Users\piyush kumar\OneDrive\Desktop\GitHub\pythonPractices\Best_senario_based_question_all_units\unit_3_exception_handling\hello\student.txt", "w", newline="") as file:
     writer = csv.writer(file)
 
     # Header
@@ -303,7 +304,7 @@ print("student.csv file created successfully\n")
 
 
 # ---------- STEP 2: READ FILE & CALCULATE TOTAL & AVERAGE ----------
-with open("student.csv", "r") as file:
+with open(r"C:\Users\piyush kumar\OneDrive\Desktop\GitHub\pythonPractices\Best_senario_based_question_all_units\unit_3_exception_handling\hello\student.txt", "r") as file:
     reader = csv.reader(file)
 
     header = next(reader)   # Skip header

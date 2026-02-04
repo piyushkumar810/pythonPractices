@@ -1,22 +1,17 @@
 
 import csv
 
-with open(r"C:\Users\piyush kumar\OneDrive\Desktop\GitHub\pythonPractices\Best_senario_based_question_all_units\unit_3_exception_handling\hello\student.txt","w") as file:
-    writer=csv.writer(file)
+# ---------- STEP 1: CREATE student.csv FILE ----------
+with open(r"C:\Users\piyush kumar\OneDrive\Desktop\GitHub\pythonPractices\Best_senario_based_question_all_units\unit_3_exception_handling\hello\student.txt", "w", newline="") as file:
+    writer = csv.writer(file)
 
-    row=["SRN","NAME", "M1", "M2", "M3"]
-    writer.writerow(row)
-    print("row created successful")
+    # Header
+    writer.writerow(["SRN", "Name", "M1", "M2", "M3"])
 
-    row1=["pes101", "Piyush", 70,60,50]
-    row2=["pes102", "Prince", 80,50,90]
-    row3=["pes103", "Priyanshu", 50,70,60]
-    rows=[row1,row2,row3]
-    writer.writerows(rows)
-    print("data inserted successful")
+    # Student records
+    writer.writerow(["pes101", "Piyush", 70, 60, 50])
+    writer.writerow(["pes102", "Prince", 80, 50, 90])
+    writer.writerow(["pes103", "Priyanshu", 50, 70, 60])
 
-    with open(r"C:\Users\piyush kumar\OneDrive\Desktop\GitHub\pythonPractices\Best_senario_based_question_all_units\unit_3_exception_handling\hello\student.txt","r") as Rfile:
-        reader=csv.reader(Rfile)
+print("student.csv file created successfully\n")
 
-        for row in reader:
-            print(row)
