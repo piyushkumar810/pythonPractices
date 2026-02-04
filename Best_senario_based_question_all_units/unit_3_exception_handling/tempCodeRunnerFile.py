@@ -1,17 +1,29 @@
 
-import csv
+import json
 
-# ---------- STEP 1: CREATE student.csv FILE ----------
-with open(r"C:\Users\piyush kumar\OneDrive\Desktop\GitHub\pythonPractices\Best_senario_based_question_all_units\unit_3_exception_handling\hello\student.txt", "w", newline="") as file:
-    writer = csv.writer(file)
+with open(r"C:\Users\piyush kumar\OneDrive\Desktop\GitHub\pythonPractices\Best_senario_based_question_all_units\unit_3_exception_handling\student1.json","w") as wfile:
 
-    # Header
-    writer.writerow(["SRN", "Name", "M1", "M2", "M3"])
-
-    # Student records
-    writer.writerow(["pes101", "Piyush", 70, 60, 50])
-    writer.writerow(["pes102", "Prince", 80, 50, 90])
-    writer.writerow(["pes103", "Priyanshu", 50, 70, 60])
-
-print("student.csv file created successfully\n")
-
+# ---------- STEP 1: Python object ----------
+    student1 = {
+        "SRN": "pes101",
+        "Name": "Piyush",
+        "Marks": [70, 60, 50]
+    }
+    
+    # ---------- STEP 2: Convert Python object to JSON string ----------
+    json_data = json.dumps(student1)
+    print("JSON String:")
+    print(json_data)
+    
+    # ---------- STEP 3: Convert JSON string back to Python object ----------
+    python_data = json.loads(json_data)
+    
+    # ---------- STEP 4: Calculate total and average ----------
+    total = sum(python_data["Marks"])
+    average = total / len(python_data["Marks"])
+    
+    print("\nStudent Details:")
+    print("Name:", python_data["Name"])
+    print("Total Marks:", total)
+    print("Average Marks:", average)
+       
