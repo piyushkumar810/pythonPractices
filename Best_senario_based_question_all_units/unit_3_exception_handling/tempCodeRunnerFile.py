@@ -1,27 +1,22 @@
 
-import os
-from datetime import datetime, timedelta
+import csv
 
-# 1️⃣ Get the current working directory
-cwd = os.getcwd()
-print("Current Working Directory:", cwd)
+with open(r"C:\Users\piyush kumar\OneDrive\Desktop\GitHub\pythonPractices\Best_senario_based_question_all_units\unit_3_exception_handling\hello\student.txt","w") as file:
+    writer=csv.writer(file)
 
-# 2️⃣ List all files and directories in current directory
-print("Files and Directories:")
-print(os.listdir(cwd))
+    row=["SRN","NAME", "M1", "M2", "M3"]
+    writer.writerow(row)
+    print("row created successful")
 
-# 3️⃣ Delete a file (assume file exists)
-file_name = "sample.txt"
+    row1=["pes101", "Piyush", 70,60,50]
+    row2=["pes102", "Prince", 80,50,90]
+    row3=["pes103", "Priyanshu", 50,70,60]
+    rows=[row1,row2,row3]
+    writer.writerows(rows)
+    print("data inserted successful")
 
-if os.path.exists(file_name):
-    os.remove(file_name)
-    print("File deleted:", file_name)
-else:
-    print("File does not exist")
+    with open(r"C:\Users\piyush kumar\OneDrive\Desktop\GitHub\pythonPractices\Best_senario_based_question_all_units\unit_3_exception_handling\hello\student.txt","r") as Rfile:
+        reader=csv.reader(Rfile)
 
-# 4️⃣ Add days to the current date
-today = datetime.now()
-future_date = today + timedelta(days=10)
-
-print("Today's date:", today.date())
-print("Date after 10 days:", future_date.date())
+        for row in reader:
+            print(row)

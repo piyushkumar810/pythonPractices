@@ -230,6 +230,52 @@ Attempt to open a non-existing file
 Create a custom exception InvalidAgeError raised if age < 18
 Zero division error
 '''
+import csv
+
+# 1️⃣ Handle non-existing file
+try:
+    with open("data.csv", "r") as file:
+        reader = csv.reader(file)
+        for row in reader:
+            print(row)
+
+except FileNotFoundError:
+    print("File not found")
+
+
+# 2️⃣ Custom exception for age
+class InvalidAgeError(Exception):
+    pass
+
+class Age:
+    def __init__(self, age):
+        self.age = age
+
+    def check_age(self):
+        if self.age < 18:
+            raise InvalidAgeError("Age must be 18 or above")
+        else:
+            print(f"Correct age: {self.age}")
+try:
+    obj = Age(12)
+    obj.check_age()
+
+except InvalidAgeError as iv:
+    print("Invalid age:", iv)
+
+
+
+# 3️⃣ Handle ZeroDivisionError
+try:
+    a = 10
+    b = 0
+    result = a / b
+    print(result)
+
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+
+
 
 '''
 Q3 (c)
@@ -239,3 +285,38 @@ Write a Python program to:
 Read the file
 Display total and average marks of each student
 '''
+import csv
+
+# ---------- STEP 1: CREATE student.csv FILE ----------
+with open("student.csv", "w", newline="") as file:
+    writer = csv.writer(file)
+
+    # Header
+    writer.writerow(["SRN", "Name", "M1", "M2", "M3"])
+
+    # Student records
+    writer.writerow(["pes101", "Piyush", 70, 60, 50])
+    writer.writerow(["pes102", "Prince", 80, 50, 90])
+    writer.writerow(["pes103", "Priyanshu", 50, 70, 60])
+
+print("student.csv file created successfully\n")
+
+
+# ---------- STEP 2: READ FILE & CALCULATE TOTAL & AVERAGE ----------
+with open("student.csv", "r") as file:
+    reader = csv.reader(file)
+
+    header = next(reader)   # Skip header
+    print("SRN   Name        Total   Average")
+
+    for row in reader:
+        srn = row[0]
+        name = row[1]
+        m1 = int(row[2])
+        m2 = int(row[3])
+        m3 = int(row[4])
+
+        total = m1 + m2 + m3
+        average = total / 3
+
+        print(srn, name, total, round(average, 2))
