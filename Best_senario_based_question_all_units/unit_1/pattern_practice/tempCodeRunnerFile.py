@@ -1,4 +1,4 @@
+rows=int(input("enter no of rows"))
+for i in range(rows):
+    print((rows)* "*")
 
-n=int(input("enter the row "))
-for i in range(1,n+1):
-    print("*"*(n-(i-1)))

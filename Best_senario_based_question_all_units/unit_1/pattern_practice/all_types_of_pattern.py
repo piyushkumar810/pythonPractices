@@ -61,6 +61,9 @@ for i in range(1,n+1):
 #   ***
 #    *
 
+
+
+
 # Q5. Diamond Pattern
 
 # Write a Python program to print a diamond pattern for an odd integer n.
@@ -82,6 +85,11 @@ for i in range(1,n+1):
 # *****
 # *****
 # *****
+rows=int(input("enter no of rows"))
+for i in range(rows):
+    print((rows)* "*")
+
+
 
 # Q7. Number Triangle
 
