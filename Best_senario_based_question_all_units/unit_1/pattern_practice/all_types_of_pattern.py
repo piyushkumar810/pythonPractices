@@ -99,6 +99,10 @@ for i in range(rows):
 # 12
 # 123
 # 1234
+rows=int(input("enter no of rows"))
+for i in range(rows):
+    print(i)
+
 
 # Q8. Repeated Number Pattern
 
