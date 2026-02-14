@@ -115,6 +115,14 @@ for i in range(1, rows + 1):      # outer loop → rows
 # 22
 # 333
 # 4444
+rows = int(input("Enter number of rows: "))
+
+for i in range(1, rows + 1):      # Outer loop for rows
+    for j in range(i):            # Inner loop prints i times
+        print(i, end="")          # Print the same number
+    print()                       # Move to next line
+
+
 
 # Q9. Floyd’s Triangle
 
