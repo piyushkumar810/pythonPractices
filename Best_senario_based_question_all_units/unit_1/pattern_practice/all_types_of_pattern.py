@@ -99,9 +99,12 @@ for i in range(rows):
 # 12
 # 123
 # 1234
-rows=int(input("enter no of rows"))
-for i in range(rows):
-    print(i)
+rows = int(input("Enter number of rows: "))
+
+for i in range(1, rows + 1):      # outer loop → rows
+    for j in range(1, i + 1):     # inner loop → numbers in each row
+        print(j, end="")          # print on same line
+    print()                       # move to next line
 
 
 # Q8. Repeated Number Pattern
