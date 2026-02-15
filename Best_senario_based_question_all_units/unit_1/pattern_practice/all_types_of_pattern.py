@@ -76,6 +76,17 @@ for i in range(1,n+1):
 #  ***
 #   *
 
+n = 3   # change this to increase size
+
+# Upper part
+for i in range(n):
+    print(" " * (n - i - 1) + "*" * (2*i + 1))
+
+# Lower part
+for i in range(n-1):
+    print(" " * (i + 1) + "*" * (2*(n - i - 2) + 1))
+
+
 # Q6. Square Pattern
 
 # Write a Python program to print a square pattern of * for n rows and columns.
