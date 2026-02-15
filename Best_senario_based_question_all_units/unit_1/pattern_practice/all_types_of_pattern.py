@@ -61,6 +61,10 @@ for i in range(1,n+1):
 #   ***
 #    *
 
+n = 4   # number of rows
+
+for i in range(n):
+    print(" " * i + "*" * (2*(n - i) - 1))
 
 
 
