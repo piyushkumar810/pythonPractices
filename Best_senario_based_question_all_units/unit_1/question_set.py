@@ -8,6 +8,34 @@
    Print numbers where sum of digits is divisible by 3
    Count how many such numbers exist
 '''
+# Accept range from user
+start = int(input("Enter starting number: "))
+end = int(input("Enter ending number: "))
+
+count = 0
+
+print("\nNumbers whose sum of digits is divisible by 3:\n")
+
+# Loop through the range
+for num in range(start, end + 1):
+    temp = num
+    digit_sum = 0
+
+    # Calculate sum of digits
+    while temp > 0:
+        digit = temp % 10
+        digit_sum += digit
+        temp //= 10
+
+    # Check divisibility by 3
+    if digit_sum % 3 == 0:
+        print(num)
+        count += 1
+
+# Print total count
+print("\nTotal count:", count)
+
+
 '''
 2.Write a user-defined function to:
     Check whether a string is a rotational palindrome
