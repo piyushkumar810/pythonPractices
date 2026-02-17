@@ -41,6 +41,7 @@ print(len(s))
 
 #--------------------------------------- remember
 # // is floor division (integer division)
+
 n=456
 '''Step	      Operation	          Result
 ----------------------------------------------
