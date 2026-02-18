@@ -41,6 +41,27 @@ print("\nTotal count:", count)
     Check whether a string is a rotational palindrome
     Return the number of rotations needed
 '''
+def rotational_palindrome(s):
+    n = len(s)
+    
+    for i in range(n):
+        rotated = s[i:] + s[:i]   # rotate string
+        
+        if rotated == rotated[::-1]:   # check palindrome
+            return i   # number of rotations needed
+    
+    return -1   # if no rotation is palindrome
+
+string = input("Enter a string: ")
+result = rotational_palindrome(string)
+
+if result == -1:
+    print("Not a rotational palindrome")
+else:
+    print("Rotational palindrome")
+    print("Rotations needed:", result)
+
+
 '''
 3.Write a recursive program to:
     Convert a decimal number to binary
