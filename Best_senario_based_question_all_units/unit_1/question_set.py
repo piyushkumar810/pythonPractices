@@ -67,6 +67,22 @@ else:
     Convert a decimal number to binary
     Print the binary digits in correct order
 '''
+def decimal_to_binary(n):
+    if n > 1:
+        decimal_to_binary(n // 2)   # Recursive call
+    print(n % 2, end="")            # Print remainder
+
+
+# Taking input
+num = int(input("Enter a decimal number: "))
+
+if num == 0:
+    print("Binary:", 0)
+else:
+    print("Binary:", end=" ")
+    decimal_to_binary(num)
+
+
 '''
 4.Write a Python program to:
     Accept a list of integers
