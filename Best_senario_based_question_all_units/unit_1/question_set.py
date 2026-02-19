@@ -89,6 +89,18 @@ else:
     Remove duplicates without using set
     Preserve original order
 '''
+# Accept input
+numbers = list(map(int, input("Enter numbers separated by space: ").split()))
+
+unique_list = []
+
+for num in numbers:
+    if num not in unique_list:   # Check if already added
+        unique_list.append(num)
+
+print("List after removing duplicates:", unique_list)
+
+
 
 # Section B - Comprehensions & Iterators
 '''
