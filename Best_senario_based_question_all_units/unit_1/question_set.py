@@ -108,6 +108,13 @@ print("List after removing duplicates:", unique_list)
     Extract all vowels from a sentence
     Reverse words having even length
 '''
+sentence = input("Enter a sentence: ")
+
+vowels = [ch for ch in sentence if ch.lower() in 'aeiou']
+
+print("Vowels in the sentence:", vowels)
+
+
 '''
 6.Generate (number, cube) pairs for numbers divisible by 4
     Write a dictionary comprehension to:
