@@ -121,6 +121,14 @@ print("Vowels in the sentence:", vowels)
     Map each word to its frequency
     Ignore case sensitivity
 '''
+sentence = "Python is great and python is easy"
+
+words = sentence.lower().split()
+
+frequency = {word: words.count(word) for word in words}
+
+print(frequency)
+
 '''
 7.Create a custom iterator that generates:
     Prime numbers up to n
